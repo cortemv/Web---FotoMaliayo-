@@ -37,7 +37,7 @@ const CONFIG = {
 
   /* ---------- Portada ---------- */
   portada: {
-    img: 'fotos/portada/entrega-premios-2025.jpg',
+    img: 'img/fotos/portada/entrega-premios-2025.jpg',
     pie: 'Entrega de premios de la edición 2025 en el Teatro Riera de Villaviciosa.',
     alt: 'Premiados de FotoMaliayo 2025 posando con sus diplomas en el escenario del Teatro Riera de Villaviciosa.',
     // Si dejas img: '' se muestra esta foto premiada en su lugar
@@ -78,19 +78,19 @@ const CERTAMENES = {
 };
 
 /* ---------- Organizadores (org) y colaboradores (col) ----------
-   logo: archivo dentro de la carpeta logos/
+   logo: archivo dentro de la carpeta img/logos/
    fondo: color de fondo de la ficha, el mismo que el fondo del logo  */
 const ENTIDADES = [
-  {"nombre": "Grupo de Montaña Llamaello", "tipo": "org", "logo": "logos/llamaello.png", "fondo": "#000000"},
-  {"nombre": "Ayuntamiento de Villaviciosa", "tipo": "org", "logo": "logos/ayuntamiento-villaviciosa.png", "fondo": "#ffffff"},
-  {"nombre": "Rodiles Surf Llar", "tipo": "org", "logo": "logos/rodiles-surf-llar.png", "fondo": "#ffffff"},
-  {"nombre": "Caja Rural de Asturias", "tipo": "col", "logo": "logos/caja-rural.png", "fondo": "#006039"},
-  {"nombre": "Trail San Xuan d'Amandi", "tipo": "col", "logo": "logos/trail-san-xuan-amandi.png", "fondo": "#ffffff"},
-  {"nombre": "Sidra Mayador", "tipo": "col", "logo": "logos/mayador.png", "fondo": "#ffffff"},
-  {"nombre": "Ganadería Amable Vega", "tipo": "col", "logo": "logos/amable-vega.png", "fondo": "#fcf9f4"},
-  {"nombre": "Ediciones Cordillera Cantábrica", "tipo": "col", "logo": "logos/cordillera-cantabrica.png", "fondo": "#fefefe"},
-  {"nombre": "Destino Norte", "tipo": "col", "logo": "logos/destino-norte.png", "fondo": "#e24a3f"},
-  {"nombre": "Indigo División", "tipo": "col", "logo": "logos/indigo-division.png", "fondo": "#ffffff"},
-  {"nombre": "Los Caserinos", "tipo": "col", "logo": "logos/los-caserinos.png", "fondo": "#f7f7f7"},
-  {"nombre": "Ignea Construcciones y Reformas", "tipo": "col", "logo": "logos/ignea.png", "fondo": "#ffffff"}
+  {"nombre": "Grupo de Montaña Llamaello", "tipo": "org", "logo": "img/logos/llamaello.png", "fondo": "#000000"},
+  {"nombre": "Ayuntamiento de Villaviciosa", "tipo": "org", "logo": "img/logos/ayuntamiento-villaviciosa.png", "fondo": "#ffffff"},
+  {"nombre": "Rodiles Surf Llar", "tipo": "org", "logo": "img/logos/rodiles-surf-llar.png", "fondo": "#ffffff"},
+  {"nombre": "Caja Rural de Asturias", "tipo": "col", "logo": "img/logos/caja-rural.png", "fondo": "#006039"},
+  {"nombre": "Trail San Xuan d'Amandi", "tipo": "col", "logo": "img/logos/trail-san-xuan-amandi.png", "fondo": "#ffffff"},
+  {"nombre": "Sidra Mayador", "tipo": "col", "logo": "img/logos/mayador.png", "fondo": "#ffffff"},
+  {"nombre": "Ganadería Amable Vega", "tipo": "col", "logo": "img/logos/amable-vega.png", "fondo": "#fcf9f4"},
+  {"nombre": "Ediciones Cordillera Cantábrica", "tipo": "col", "logo": "img/logos/cordillera-cantabrica.png", "fondo": "#fefefe"},
+  {"nombre": "Destino Norte", "tipo": "col", "logo": "img/logos/destino-norte.png", "fondo": "#e24a3f"},
+  {"nombre": "Indigo División", "tipo": "col", "logo": "img/logos/indigo-division.png", "fondo": "#ffffff"},
+  {"nombre": "Los Caserinos", "tipo": "col", "logo": "img/logos/los-caserinos.png", "fondo": "#f7f7f7"},
+  {"nombre": "Ignea Construcciones y Reformas", "tipo": "col", "logo": "img/logos/ignea.png", "fondo": "#ffffff"}
 ];
