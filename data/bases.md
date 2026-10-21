@@ -4,7 +4,7 @@ FotoMaliayo {{año}}: IV Certamen rexonal de semeyes etnográfiques d'Asturies e
 
 ## 1. Organización
 
-El concurso lo organizan el Grupo de Montaña Llamaello, el Ayuntamiento de Villaviciosa y Rodiles Surf Llar, con la colaboración de las entidades que figuran en el cartel. El responsable del concurso y del tratamiento de los datos de los participantes es {{titular}} (datos de contacto en el [aviso legal](#aviso-legal)).
+El concurso lo organizan el Grupo de Montaña Llamaello, el Ayuntamiento de Villaviciosa y Rodiles Surf Llar, con la colaboración de las entidades que figuran en el cartel. El responsable del concurso y del tratamiento de los datos de los participantes es {{titular}} (datos de contacto en el [aviso legal](aviso-legal.html)).
 
 ## 2. Participantes
 
@@ -38,7 +38,7 @@ En todas las categorías de paisaje el jurado valorará que el paisaje sea predo
 
 ## 5. Inscripción
 
-La participación se realiza mediante el [formulario de inscripción](#participar) de esta web, indicando para cada fotografía el título, una breve descripción y la categoría. Se recomienda contar en la descripción la técnica empleada y la historia de la imagen: ayuda al jurado a interpretarla.
+La participación se realiza mediante el [formulario de inscripción](participar.html) de esta web, indicando para cada fotografía el título, una breve descripción y la categoría. Se recomienda contar en la descripción la técnica empleada y la historia de la imagen: ayuda al jurado a interpretarla.
 
 La participación es gratuita. El contacto con los participantes se hará por correo electrónico o por teléfono, incluido WhatsApp.
 
@@ -57,7 +57,7 @@ La entrega de premios será el sábado 17 de octubre de {{año}} en el Teatro Ri
 _Certamen rexonal de semeyes etnográfiques d'Asturies_
 
 | Premio                                 | Importe |
-| -------------------------------------- | ------- |
+| -------------------------------------- | ------: |
 | Ganador                                | 250 €   |
 | Mención de honor                       | 150 €   |
 | Finalista                              | 75 €    |
@@ -66,7 +66,7 @@ _Certamen rexonal de semeyes etnográfiques d'Asturies_
 _Concurso de fotografía paisajística de Villaviciosa_
 
 | Categoría                    | Ganador | Finalista |
-| ---------------------------- | ------- | --------- |
+| ---------------------------- | ------: | --------: |
 | Montaña                      | 250 €   | 100 €     |
 | Mar                          | 250 €   | 100 €     |
 | Deportes                     | 250 €   | 100 €     |
@@ -91,7 +91,7 @@ Los premios están sujetos a la normativa fiscal vigente.
 
 ## 11. Protección de datos
 
-Los datos de los participantes se tratan según la [política de privacidad](#privacidad). El nombre de los premiados y finalistas se publicará junto a sus obras en esta web, en redes sociales y en la exposición.
+Los datos de los participantes se tratan según la [política de privacidad](privacidad.html). El nombre de los premiados y finalistas se publicará junto a sus obras en esta web, en redes sociales y en la exposición.
 
 ## 12. Aceptación y modificaciones
 

@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Inscripción · FotoMaliayo</title>
+<meta name="description" content="Formulario de inscripción de FotoMaliayo: envía tus fotografías al Certamen de semeyes etnográfiques y al Concurso de fotografía paisajística de Villaviciosa.">
+<link rel="canonical" href="https://fotomaliayo.es/participar.html">
+<meta name="theme-color" content="#16100b">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="FotoMaliayo">
+<meta property="og:locale" content="es_ES">
+<meta property="og:title" content="Inscripción en FotoMaliayo">
+<meta property="og:description" content="Formulario de inscripción de FotoMaliayo: envía tus fotografías al Certamen de semeyes etnográfiques y al Concurso de fotografía paisajística de Villaviciosa.">
+<meta property="og:url" content="https://fotomaliayo.es/participar.html">
+<meta property="og:image" content="https://fotomaliayo.es/img/cartel-2026.jpg">
+<meta property="og:image:alt" content="Cartel de FotoMaliayo 2026">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="img/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="css/variables.css">
+<link rel="stylesheet" href="css/global.css">
+<link rel="stylesheet" href="css/paginas/participar.css">
+<script src="js/datos/config.js" defer></script>
+<script src="js/datos/entidades.js" defer></script>
+<script src="js/lib/utilidades.js" defer></script>
+<script src="js/componentes/sitio.js" defer></script>
+<script src="js/paginas/participar.js" defer></script>
+</head>
+<body>
+<a class="skip" href="#contenido">Saltar al contenido</a>
+
+<header>
+  <a href="./">FotoMaliayo</a>
+  <nav aria-label="Principal">
+    <a href="ganadores.html">Ganadores</a>
+    <a href="bases.html">Bases</a>
+    <a href="participar.html" class="cta" aria-current="page">Participar</a>
+  </nav>
+</header>
+
+<main id="contenido">
+  <h1>Inscripción</h1>
+
+  <div id="cerrada" class="prose" hidden>
+    <p>El plazo de inscripción de la edición <span data-config="edicion">2026</span> terminó el <span data-fecha-limite></span>.</p>
+    <p>Las bases de la próxima edición se publicarán en esta web y en las redes sociales del concurso. Mientras tanto, puedes ver los <a href="ganadores.html">ganadores de ediciones anteriores</a>.</p>
+  </div>
+
+  <noscript>
+    <p class="prose">Para enviar tu inscripción necesitas tener JavaScript activado en el navegador. Si no puedes activarlo, escribe a <a href="mailto:concursofotografiavillaviciosa@gmail.com">concursofotografiavillaviciosa@gmail.com</a>.</p>
+  </noscript>
+
+  <p id="aviso-prueba" class="demo" hidden>Vista de prueba: el formulario funciona y valida las fotografías, pero todavía no envía nada. Se activará al conectar el almacenamiento.</p>
+
+  <form id="inscripcion" novalidate hidden>
+    <p class="prose">Rellena tus datos, añade tus fotografías y envíalo todo de una vez. Puedes presentar hasta <span data-config="certamenes.etno.max">3</span> fotografías al certamen etnográfico y hasta <span data-config="certamenes.paisaje.max">5</span> al de paisaje. Los campos con <span class="req">*</span> son obligatorios.</p>
+
+    <div id="errores" class="errors" tabindex="-1" hidden>
+      <p></p>
+      <ul></ul>
+    </div>
+
+    <fieldset>
+      <legend>Tus datos</legend>
+      <div class="grid">
+        <div>
+          <label for="nombre">Nombre <span class="req" aria-hidden="true">*</span></label>
+          <input id="nombre" name="nombre" type="text" autocomplete="given-name" required>
+        </div>
+        <div>
+          <label for="apellidos">Apellidos <span class="req" aria-hidden="true">*</span></label>
+          <input id="apellidos" name="apellidos" type="text" autocomplete="family-name" required>
+        </div>
+        <div>
+          <label for="email">Correo electrónico <span class="req" aria-hidden="true">*</span></label>
+          <input id="email" name="email" type="email" autocomplete="email" required>
+        </div>
+        <div>
+          <label for="telefono">Teléfono <span class="req" aria-hidden="true">*</span></label>
+          <input id="telefono" name="telefono" type="tel" autocomplete="tel" required aria-describedby="telefono-ayuda">
+          <p class="hint" id="telefono-ayuda">También para avisos por WhatsApp.</p>
+        </div>
+        <div class="full">
+          <label for="localidad">Localidad</label>
+          <input id="localidad" name="localidad" type="text" autocomplete="address-level2">
+        </div>
+        <div class="full">
+          <div class="check">
+            <input id="socio" name="socio" type="checkbox">
+            <label for="socio">Soy socio o socia del Grupo de Montaña Llamaello</label>
+          </div>
+          <div id="socio-num" hidden>
+            <label for="numSocio">Número de socio</label>
+            <input id="numSocio" name="numSocio" type="text">
+          </div>
+        </div>
+      </div>
+      <div class="hp" aria-hidden="true">
+        <label for="web">No rellenes este campo</label>
+        <input id="web" name="web" type="text" tabindex="-1" autocomplete="off">
+      </div>
+    </fieldset>
+
+    <fieldset>
+      <legend>Tus fotografías</legend>
+      <p class="hint">JPG de al menos <span data-config="minLado">1920</span> px en el lado mayor y hasta <span data-config="maxMB">20</span> MB. Sin marcos, bordes ni firmas.</p>
+      <p class="counters" aria-live="polite">
+        <span><span lang="ast">Semeyes etnográfiques</span>: <strong id="contador-etno">0</strong> de <span data-config="certamenes.etno.max">3</span></span>
+        <span>Paisaje: <strong id="contador-paisaje">0</strong> de <span data-config="certamenes.paisaje.max">5</span></span>
+      </p>
+      <div id="fotos"></div>
+      <button type="button" class="btn ghost" id="anadir">Añadir fotografía</button>
+    </fieldset>
+
+    <fieldset>
+      <legend>Declaraciones</legend>
+      <div class="check">
+        <input id="d-bases" type="checkbox" required>
+        <label for="d-bases">He leído y acepto las <a href="bases.html" target="_blank">bases del concurso</a> y la <a href="privacidad.html" target="_blank">política de privacidad</a>. <span class="req" aria-hidden="true">*</span></label>
+      </div>
+      <div class="check">
+        <input id="d-autor" type="checkbox" required>
+        <label for="d-autor">Soy el autor o autora de las fotografías y tengo el consentimiento de las personas reconocibles que aparecen en ellas. <span class="req" aria-hidden="true">*</span></label>
+      </div>
+      <div class="check">
+        <input id="d-edad" type="checkbox" required>
+        <label for="d-edad">Soy mayor de 18 años, o cuento con la autorización de mi padre, madre o tutor y la enviaré a la organización. <span class="req" aria-hidden="true">*</span></label>
+      </div>
+      <div class="check">
+        <input id="d-news" type="checkbox">
+        <label for="d-news">Quiero recibir avisos de futuras ediciones del concurso (opcional).</label>
+      </div>
+
+      <div class="layer">
+        <p id="capa-datos">Información básica sobre protección de datos</p>
+        <div class="table-scroll">
+          <table aria-labelledby="capa-datos">
+            <tbody>
+              <tr><th scope="row">Responsable</th><td data-config="titular.nombre">Manuel Ángel Toral Fernández</td></tr>
+              <tr><th scope="row">Finalidad</th><td>Gestionar tu participación en el concurso y, si lo autorizas, avisarte de futuras ediciones.</td></tr>
+              <tr><th scope="row">Legitimación</th><td>Aceptación de las bases del concurso y, en su caso, tu consentimiento.</td></tr>
+              <tr><th scope="row">Destinatarios</th><td>No se ceden datos a terceros. El jurado recibe las fotografías de forma anónima. Los datos se almacenan en Google Drive.</td></tr>
+              <tr><th scope="row">Derechos</th><td>Acceso, rectificación, supresión y otros, escribiendo a <span data-config="email">concursofotografiavillaviciosa@gmail.com</span>.</td></tr>
+              <tr><th scope="row">Más información</th><td><a href="privacidad.html" target="_blank">Política de privacidad</a></td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </fieldset>
+
+    <div id="envio" hidden>
+      <p id="envio-texto">Enviando…</p>
+      <progress id="envio-barra" max="100" value="0" aria-labelledby="envio-texto"></progress>
+      <p class="hint">No cierres esta página hasta que termine el envío.</p>
+    </div>
+    <button type="submit" class="btn" id="enviar">Enviar inscripción</button>
+  </form>
+
+  <div id="enviado" class="done" tabindex="-1" hidden>
+    <p>Inscripción enviada. Tu código de participante es</p>
+    <p class="code" id="enviado-codigo"></p>
+    <p id="enviado-resumen"></p>
+    <p>Si necesitas cambiar algo, escribe a <a href="mailto:concursofotografiavillaviciosa@gmail.com">concursofotografiavillaviciosa@gmail.com</a> indicando tu código.</p>
+  </div>
+
+  <!-- Plantilla de cada fotografía; la usa js/paginas/participar.js -->
+  <template id="tpl-foto">
+    <section class="photo" aria-labelledby="foto-encabezado">
+      <div class="thumb" data-campo="miniatura">Sin imagen</div>
+      <div class="fields">
+        <header>
+          <h3 id="foto-encabezado" data-campo="encabezado">Fotografía</h3>
+          <button type="button" data-campo="quitar">Quitar</button>
+        </header>
+        <div>
+          <label for="foto-archivo">Archivo JPG <span class="req" aria-hidden="true">*</span></label>
+          <input id="foto-archivo" data-campo="archivo" type="file" accept="image/jpeg,.jpg,.jpeg" required aria-describedby="foto-info">
+          <p class="file-info" id="foto-info" data-campo="info" aria-live="polite"></p>
+        </div>
+        <div class="grid">
+          <div>
+            <label for="foto-certamen">Certamen <span class="req" aria-hidden="true">*</span></label>
+            <select id="foto-certamen" data-campo="certamen" required>
+              <option value="">Elige un certamen</option>
+              <option value="etno" data-config="certamenes.etno.corto">Semeyes etnográfiques</option>
+              <option value="paisaje" data-config="certamenes.paisaje.corto">Fotografía paisajística</option>
+            </select>
+          </div>
+          <div>
+            <label for="foto-categoria">Categoría <span class="req" aria-hidden="true">*</span></label>
+            <select id="foto-categoria" data-campo="categoria" required>
+              <option value="">Elige primero el certamen</option>
+            </select>
+          </div>
+        </div>
+        <div class="check" data-especial hidden>
+          <input id="foto-especial" data-campo="especial" type="checkbox">
+          <label for="foto-especial">Participa también en la categoría especial «<span data-config="certamenes.etno.especial">El hórreo</span>»</label>
+        </div>
+        <div>
+          <label for="foto-titulo">Título <span class="req" aria-hidden="true">*</span></label>
+          <input id="foto-titulo" data-campo="titulo" type="text" maxlength="100" required>
+        </div>
+        <div>
+          <label for="foto-descripcion">Descripción <span class="req" aria-hidden="true">*</span></label>
+          <textarea id="foto-descripcion" data-campo="descripcion" maxlength="1500" required placeholder="Dónde y cuándo se tomó, la técnica empleada y la historia del momento."></textarea>
+        </div>
+      </div>
+    </section>
+  </template>
+</main>
+
+<footer>
+  <section class="entities" aria-label="Entidades organizadoras y colaboradoras">
+    <div>
+      <h2>Organizan</h2>
+      <ul data-entidades="org"></ul>
+    </div>
+    <div>
+      <h2>Colaboran</h2>
+      <ul data-entidades="col"></ul>
+    </div>
+  </section>
+  <div class="foot-grid">
+    <section aria-labelledby="pie-fotomaliayo">
+      <h2 id="pie-fotomaliayo">FotoMaliayo</h2>
+      <p>Concurso de fotografía de Villaviciosa: <span lang="ast">Certamen rexonal de semeyes etnográfiques d'Asturies</span> y Concurso de fotografía paisajística.</p>
+      <p>fotomaliayo.es</p>
+    </section>
+    <section aria-labelledby="pie-contacto">
+      <h2 id="pie-contacto">Contacto</h2>
+      <ul>
+        <li><a href="mailto:concursofotografiavillaviciosa@gmail.com">concursofotografiavillaviciosa@gmail.com</a></li>
+        <li><a href="https://www.instagram.com/fotomaliayo/" rel="noopener" target="_blank">Instagram @fotomaliayo</a></li>
+        <li><a href="https://www.facebook.com/concursofotografiavillaviciosa" rel="noopener" target="_blank">Facebook de FotoMaliayo</a></li>
+      </ul>
+    </section>
+    <nav aria-labelledby="pie-legal">
+      <h2 id="pie-legal">Información legal</h2>
+      <ul>
+        <li><a href="bases.html">Bases del concurso</a></li>
+        <li><a href="aviso-legal.html">Aviso legal</a></li>
+        <li><a href="privacidad.html">Política de privacidad</a></li>
+        <li><a href="cookies.html">Política de cookies</a></li>
+      </ul>
+    </nav>
+  </div>
+</footer>
+</body>
+</html>

@@ -1,0 +1,47 @@
+/* =====================================================================
+   COMPONENTE: documentos de texto (bases y textos legales)
+   Da formato al HTML que se genera a partir de los archivos .md de /data.
+   ===================================================================== */
+
+.doc {
+  max-width: var(--measure);
+  margin-inline: auto;
+}
+
+.doc h2 {
+  padding-top: 1.6rem;
+  border-top: 1px solid var(--copper-dim);
+}
+
+.doc h3 {
+  margin-top: 1.6rem;
+  color: var(--copper);
+}
+
+.doc ol,
+.doc ul {
+  padding-left: 1.3rem;
+}
+
+.doc li {
+  margin: 0.35rem 0;
+}
+
+.doc blockquote {
+  margin: 1.2rem 0;
+  padding: 0.8rem 1.1rem;
+  border-left: 3px solid var(--teal);
+  background: var(--wood-2);
+}
+
+.doc hr {
+  margin: 2rem 0;
+  border: 0;
+  border-top: 1px solid var(--copper-dim);
+}
+
+/* Entradilla: el párrafo que sigue al título en los documentos que la tienen */
+.doc.con-entradilla h1 + p {
+  color: var(--muted);
+  font-size: 0.95rem;
+}

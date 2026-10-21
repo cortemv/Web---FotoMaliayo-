@@ -11,9 +11,9 @@
  *     Se crearán la carpeta «FotoMaliayo · Inscripciones» y la hoja «FotoMaliayo · Participantes».
  *  4. Implementar > Nueva implementación > Tipo: Aplicación web.
  *       Ejecutar como: Yo.   Quién tiene acceso: Cualquier usuario.
- *  5. Copia la URL que termina en /exec y pégala en index.html, en CONFIG.endpoint.
+ *  5. Copia la URL que termina en /exec y pégala en js/datos/config.js, en «endpoint».
  *
- * CADA EDICIÓN: cambia EDICION y FECHA_LIMITE aquí y en index.html, y vuelve a implementar
+ * CADA EDICIÓN: cambia EDICION y FECHA_LIMITE aquí y en js/datos/config.js, y vuelve a implementar
  * (Implementar > Gestionar implementaciones > editar > Nueva versión).
  *
  * PARA EL JURADO: comparte solo la carpeta de la edición (fotos con código, sin nombres).

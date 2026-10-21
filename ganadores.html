@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Ganadores de ediciones anteriores · FotoMaliayo</title>
+<meta name="description" content="Fotografías ganadoras y finalistas de todas las ediciones de FotoMaliayo, el concurso de fotografía etnográfica y paisajística de Villaviciosa (Asturias).">
+<link rel="canonical" href="https://fotomaliayo.es/ganadores.html">
+<meta name="theme-color" content="#16100b">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="FotoMaliayo">
+<meta property="og:locale" content="es_ES">
+<meta property="og:title" content="Ganadores de FotoMaliayo">
+<meta property="og:description" content="Fotografías ganadoras y finalistas de todas las ediciones de FotoMaliayo, el concurso de fotografía etnográfica y paisajística de Villaviciosa (Asturias).">
+<meta property="og:url" content="https://fotomaliayo.es/ganadores.html">
+<meta property="og:image" content="https://fotomaliayo.es/img/cartel-2026.jpg">
+<meta property="og:image:alt" content="Cartel de FotoMaliayo 2026">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="img/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="css/variables.css">
+<link rel="stylesheet" href="css/global.css">
+<link rel="stylesheet" href="css/componentes/lightbox.css">
+<link rel="stylesheet" href="css/paginas/ganadores.css">
+<script src="js/datos/config.js" defer></script>
+<script src="js/datos/entidades.js" defer></script>
+<script src="js/lib/utilidades.js" defer></script>
+<script src="js/componentes/sitio.js" defer></script>
+<script src="js/datos/ganadores.js" defer></script>
+<script src="js/lib/texto.js" defer></script>
+<script src="js/componentes/lightbox.js" defer></script>
+<script src="js/paginas/ganadores.js" defer></script>
+</head>
+<body>
+<a class="skip" href="#contenido">Saltar al contenido</a>
+
+<header>
+  <a href="./">FotoMaliayo</a>
+  <nav aria-label="Principal">
+    <a href="ganadores.html" aria-current="page">Ganadores</a>
+    <a href="bases.html">Bases</a>
+    <a href="participar.html" class="cta">Participar</a>
+  </nav>
+</header>
+
+<main id="contenido">
+  <h1>Ganadores de ediciones anteriores</h1>
+  <p class="prose muted">Las fotografías premiadas y finalistas de cada edición. Pulsa una imagen para verla a mayor tamaño. Todas las fotografías pertenecen a sus autores y no pueden usarse sin su permiso.</p>
+
+  <div id="pestanas" role="tablist" aria-label="Edición"></div>
+  <div id="panel" role="tabpanel" tabindex="0">
+    <p class="meta" id="ordinal"></p>
+    <nav class="cat-index" id="indice-categorias" aria-label="Categorías"></nav>
+    <div id="galerias"></div>
+  </div>
+  <noscript><p class="prose">Para ver la galería de ganadores necesitas tener JavaScript activado en el navegador.</p></noscript>
+
+  <!-- Plantillas que usa js/paginas/ganadores.js -->
+  <template id="tpl-pestana">
+    <button type="button" role="tab" aria-selected="false" aria-controls="panel" tabindex="-1"></button>
+  </template>
+  <template id="tpl-enlace-categoria">
+    <a></a>
+  </template>
+  <template id="tpl-certamen">
+    <h2>Certamen</h2>
+  </template>
+  <template id="tpl-categoria">
+    <section class="cat-block">
+      <h3>Categoría</h3>
+      <div class="gallery"></div>
+    </section>
+  </template>
+  <template id="tpl-obra">
+    <figure>
+      <button type="button" aria-haspopup="dialog"></button>
+      <figcaption><span class="prize"></span> <cite></cite> <span class="author"></span></figcaption>
+    </figure>
+  </template>
+</main>
+
+<dialog id="lightbox" aria-label="Fotografía ampliada">
+  <form method="dialog"><button class="btn ghost">Cerrar</button></form>
+  <figure><figcaption></figcaption></figure>
+</dialog>
+
+<footer>
+  <section class="entities" aria-label="Entidades organizadoras y colaboradoras">
+    <div>
+      <h2>Organizan</h2>
+      <ul data-entidades="org"></ul>
+    </div>
+    <div>
+      <h2>Colaboran</h2>
+      <ul data-entidades="col"></ul>
+    </div>
+  </section>
+  <div class="foot-grid">
+    <section aria-labelledby="pie-fotomaliayo">
+      <h2 id="pie-fotomaliayo">FotoMaliayo</h2>
+      <p>Concurso de fotografía de Villaviciosa: <span lang="ast">Certamen rexonal de semeyes etnográfiques d'Asturies</span> y Concurso de fotografía paisajística.</p>
+      <p>fotomaliayo.es</p>
+    </section>
+    <section aria-labelledby="pie-contacto">
+      <h2 id="pie-contacto">Contacto</h2>
+      <ul>
+        <li><a href="mailto:concursofotografiavillaviciosa@gmail.com">concursofotografiavillaviciosa@gmail.com</a></li>
+        <li><a href="https://www.instagram.com/fotomaliayo/" rel="noopener" target="_blank">Instagram @fotomaliayo</a></li>
+        <li><a href="https://www.facebook.com/concursofotografiavillaviciosa" rel="noopener" target="_blank">Facebook de FotoMaliayo</a></li>
+      </ul>
+    </section>
+    <nav aria-labelledby="pie-legal">
+      <h2 id="pie-legal">Información legal</h2>
+      <ul>
+        <li><a href="bases.html">Bases del concurso</a></li>
+        <li><a href="aviso-legal.html">Aviso legal</a></li>
+        <li><a href="privacidad.html">Política de privacidad</a></li>
+        <li><a href="cookies.html">Política de cookies</a></li>
+      </ul>
+    </nav>
+  </div>
+</footer>
+</body>
+</html>

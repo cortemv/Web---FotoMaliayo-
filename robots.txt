@@ -1,0 +1,6 @@
+# robots.txt de fotomaliayo.es
+# Se permite rastrear toda la web pública.
+User-agent: *
+Allow: /
+
+Sitemap: https://fotomaliayo.es/sitemap.xml

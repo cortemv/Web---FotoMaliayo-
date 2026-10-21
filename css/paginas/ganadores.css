@@ -1,0 +1,161 @@
+/* =====================================================================
+   PÁGINA: ganadores de ediciones anteriores (ganadores.html)
+   ===================================================================== */
+
+/* ---------- Pestañas de año ---------- */
+[role="tablist"] {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  margin: 1.6rem 0 2rem;
+}
+
+[role="tab"] {
+  padding: 0.45rem 1rem;
+  border: 1px solid var(--copper-dim);
+  border-radius: var(--radius);
+  background: transparent;
+  color: var(--parchment);
+  font: inherit;
+  font-size: 1.1rem;
+  cursor: pointer;
+}
+
+[role="tab"]:hover {
+  border-color: var(--copper);
+}
+
+[role="tab"][aria-selected="true"] {
+  border-color: var(--copper);
+  background: var(--copper);
+  color: var(--wood);
+}
+
+/* ---------- Índice de categorías ---------- */
+.cat-index {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin: 0.4rem 0 1rem;
+}
+
+.cat-index a {
+  padding: 0.3rem 0.9rem;
+  border: 1px solid var(--copper);
+  border-radius: 999px;
+  font-size: 0.98rem;
+  color: var(--copper);
+  text-decoration: none;
+}
+
+.cat-index a.paisaje {
+  border-color: var(--teal);
+  color: var(--teal-light);
+}
+
+.cat-index a:hover {
+  background: var(--wood-3);
+}
+
+/* ---------- Título de cada certamen ---------- */
+[role="tabpanel"] h2 {
+  margin: 3rem 0 0.4rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid var(--copper-dim);
+  font-size: 1.1rem;
+  letter-spacing: 0.05em;
+}
+
+/* ---------- Bloque de categoría ---------- */
+.cat-block {
+  --cat: var(--copper);
+  margin: 1.6rem 0 2.6rem;
+  padding: 1.2rem 0 0 1.4rem;
+  border-left: 4px solid var(--cat);
+  scroll-margin-top: 1.5rem;
+}
+
+.cat-block.paisaje {
+  --cat: var(--teal);
+}
+
+.cat-block h3 {
+  margin: 0 0 1.2rem;
+  font-size: clamp(1.4rem, 1.1rem + 1vw, 1.8rem);
+  font-variant: small-caps;
+  line-height: 1.15;
+  letter-spacing: 0.03em;
+  color: var(--parchment);
+}
+
+.cat-block.paisaje h3 {
+  color: var(--teal-pale);
+}
+
+/* ---------- Galería de obras ---------- */
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  gap: 1.8rem 1.6rem;
+}
+
+.gallery figure {
+  flex: 0 1 auto;
+  max-width: 100%;
+  margin: 0;
+}
+
+.gallery button {
+  width: 100%;
+}
+
+.gallery img {
+  width: auto;
+  max-width: 100%;
+  height: clamp(170px, 21vw, 270px);
+  object-fit: contain;
+  border: 1px solid var(--copper-dim);
+  background: var(--wood-3);
+}
+
+.gallery button:hover img {
+  border-color: var(--copper);
+}
+
+.gallery figcaption {
+  margin-top: 0.7rem;
+  line-height: 1.4;
+  color: var(--parchment);
+}
+
+.gallery cite,
+.gallery figcaption span:last-child {
+  display: block;
+}
+
+.prize {
+  font-variant: small-caps;
+  letter-spacing: 0.03em;
+  color: var(--copper);
+}
+
+.prize.win {
+  padding: 0 0.45rem;
+  border-radius: var(--radius);
+  background: var(--red-strong);
+  color: var(--parchment);
+}
+
+/* Hueco para una fotografía que aún no se ha subido */
+.frame {
+  display: grid;
+  place-items: center;
+  aspect-ratio: 3 / 2;
+  padding: 1rem;
+  border: 1px solid var(--copper-dim);
+  background: var(--wood-3);
+  font-size: 0.95rem;
+  text-align: center;
+  color: var(--muted);
+}

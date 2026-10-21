@@ -1,0 +1,15 @@
+# Cabeceras para Netlify (se aplican al publicar; no afectan al ver la web en local).
+# Los archivos de trabajo se pueden descargar, pero no deben aparecer en los buscadores:
+# el contenido de /data ya se publica, convertido, en sus páginas HTML.
+
+/data/*
+  X-Robots-Tag: noindex
+
+/herramientas/*
+  X-Robots-Tag: noindex
+
+/Code.gs
+  X-Robots-Tag: noindex
+
+/GUIA-ACTUALIZACION.md
+  X-Robots-Tag: noindex

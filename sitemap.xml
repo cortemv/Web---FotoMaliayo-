@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  Mapa del sitio de fotomaliayo.es
+  Para añadir una página nueva, copia un bloque <url> completo y cambia la
+  dirección. Las direcciones deben ser absolutas (con https://fotomaliayo.es/).
+-->
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url>
+    <loc>https://fotomaliayo.es/</loc>
+  </url>
+  <url>
+    <loc>https://fotomaliayo.es/ganadores.html</loc>
+  </url>
+  <url>
+    <loc>https://fotomaliayo.es/bases.html</loc>
+  </url>
+  <url>
+    <loc>https://fotomaliayo.es/participar.html</loc>
+  </url>
+  <url>
+    <loc>https://fotomaliayo.es/aviso-legal.html</loc>
+  </url>
+  <url>
+    <loc>https://fotomaliayo.es/privacidad.html</loc>
+  </url>
+  <url>
+    <loc>https://fotomaliayo.es/cookies.html</loc>
+  </url>
+</urlset>
