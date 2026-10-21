@@ -2,8 +2,7 @@
    COMPORTAMIENTO COMÚN A TODAS LAS PÁGINAS
    ---------------------------------------------------------------------
    - Rellena los textos marcados con data-config (año, responsable…).
-   - Muestra los logotipos de organizadores y colaboradores en el pie.
-   Requiere js/datos/config.js, js/datos/entidades.js y js/lib/utilidades.js.
+   - Muestra los logotipos de organizadores y colaboradores en el pie desde el JSON.
    ===================================================================== */
 
 (() => {
@@ -12,7 +11,6 @@
     imagen.src = entidad.logo;
     imagen.alt = entidad.nombre;
     imagen.loading = "lazy";
-
     return imagen;
   }
 
@@ -22,7 +20,6 @@
     enlace.target = "_blank";
     enlace.rel = "noopener noreferrer";
     enlace.append(imagen);
-
     return enlace;
   }
 
@@ -37,11 +34,24 @@
     return elemento;
   }
 
-  function mostrarLogos() {
-    $$("ul[data-entidades]").forEach((lista) => {
-      const tipo = lista.dataset.entidades;
-      lista.replaceChildren(...ENTIDADES.filter((e) => e.tipo === tipo).map(crearLogo));
-    });
+  async function mostrarLogos() {
+    try {
+      const respuesta = await fetch("data/entidades.json");
+      const datos = await respuesta.json();
+
+      const mapa = {
+        org: datos.organizan,
+        col: datos.colaboran,
+      };
+
+      $$("ul[data-entidades]").forEach((lista) => {
+        const tipo = lista.dataset.entidades;
+        const entidadesLista = mapa[tipo] || [];
+        lista.replaceChildren(...entidadesLista.map(crearLogo));
+      });
+    } catch (error) {
+      console.error("Error al cargar data/entidades.json:", error);
+    }
   }
 
   rellenarConfig();

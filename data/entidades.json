@@ -1,0 +1,82 @@
+{
+    "_comment": "ORGANIZADORES (org) Y COLABORADORES (col)",
+    "_comment1": "Aparecen en el pie de todas las páginas, en este orden.",
+    "_comment2": "logo:  archivo dentro de la carpeta img/logos/",
+    "_comment3": "fondo: color de fondo de la ficha, el mismo que el fondo del logo",
+    "organizan": [
+        {
+            "nombre": "Grupo de Montaña Llamaello",
+            "logo": "img/logos/logo-grupo-montana-llamaello.png",
+            "fondo": "#FFFFFF",
+            "url": "https://www.llamaello.es/index.html"
+        },
+        {
+            "nombre": "Ayuntamiento de Villaviciosa",
+            "logo": "img/logos/logo-ayuntamiento-villaviciosa.svg",
+            "fondo": "#ffffff",
+            "url": "https://www.villaviciosa.es"
+        },
+        {
+            "nombre": "Rodiles Surf Llar",
+            "logo": "img/logos/logo-surf-llar.png",
+            "fondo": "#ffffff",
+            "url": "https://www.instagram.com/surfllar/"
+        }
+    ],
+    "colaboran": [
+        {
+            "nombre": "Caja Rural de Asturias",
+            "logo": "img/logos/logo-caja-rural.png",
+            "fondo": "#ffffff",
+            "url": "https://www.cajaruraldeasturias.com/es"
+        },
+        {
+            "nombre": "Trail San Xuan d'Amandi",
+            "logo": "img/logos/logo-trail-san-xuan.jpeg",
+            "fondo": "#ffffff",
+            "url": "https://trailsanxuan.es"
+        },
+        {
+            "nombre": "Sidra Mayador",
+            "logo": "img/logos/logo-sidra-mayador.png",
+            "fondo": "#ffffff",
+            "url": "https://www.mayador.com"
+        },
+        {
+            "nombre": "Ganadería Amable Vega",
+            "logo": "img/logos/logo-ganaderia-amable-vega.png",
+            "fondo": "#fcf9f4",
+            "url": "https://www.instagram.com/reel/DVLTIWZDjp9/"
+        },
+        {
+            "nombre": "Ediciones Cordillera Cantábrica",
+            "logo": "img/logos/logo-cordillera-cantabrica.webp",
+            "fondo": "#fefefe",
+            "url": "https://www.edicionescordilleracantabrica.com"
+        },
+        {
+            "nombre": "Destino Norte",
+            "logo": "img/logos/logo-destino-norte.jpeg",
+            "fondo": "#e24a3f",
+            "url": "https://destinonorte.es"
+        },
+        {
+            "nombre": "Indigo División",
+            "logo": "img/logos/logo-indigo-division.jpg",
+            "fondo": "#ffffff",
+            "url": "http://www.indigodivision.com"
+        },
+        {
+            "nombre": "Los Caserinos",
+            "logo": "img/logos/logo-los-caserinos.png",
+            "fondo": "#f7f7f7",
+            "url": "https://loscaserinos.com/?v=fefc4a79cecf"
+        },
+        {
+            "nombre": "Ignea Construcciones y Reformas",
+            "logo": "img/logos/logo-ignea.png",
+            "fondo": "#ffffff",
+            "url": "https://www.instagram.com/igneaconstrucciones/"
+        }
+    ]
+}
