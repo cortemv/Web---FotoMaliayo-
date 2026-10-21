@@ -7,17 +7,33 @@
    ===================================================================== */
 
 (() => {
-  function crearLogo(entidad) {
-    const elemento = document.createElement("li");
-    elemento.title = entidad.nombre;
-    elemento.style.setProperty("--fondo", entidad.fondo);
-
+  function crearImagen(entidad) {
     const imagen = document.createElement("img");
     imagen.src = entidad.logo;
     imagen.alt = entidad.nombre;
     imagen.loading = "lazy";
 
-    elemento.append(imagen);
+    return imagen;
+  }
+
+  function crearEnlace(url, imagen) {
+    const enlace = document.createElement("a");
+    enlace.href = url;
+    enlace.target = "_blank";
+    enlace.rel = "noopener noreferrer";
+    enlace.append(imagen);
+
+    return enlace;
+  }
+
+  function crearLogo(entidad) {
+    const elemento = document.createElement("li");
+    elemento.title = entidad.nombre;
+    elemento.style.setProperty("--fondo", entidad.fondo);
+
+    const imagen = crearImagen(entidad);
+    elemento.append(entidad.url ? crearEnlace(entidad.url, imagen) : imagen);
+
     return elemento;
   }
 
