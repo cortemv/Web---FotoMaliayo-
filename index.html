@@ -1,152 +1,177 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>FotoMaliayo · Concurso de fotografía de Villaviciosa</title>
-<meta name="description" content="FotoMaliayo: Certamen rexonal de semeyes etnográfiques d'Asturies y Concurso de fotografía paisajística de Villaviciosa. Bases, ganadores e inscripción.">
-<link rel="canonical" href="https://fotomaliayo.es/">
-<meta name="theme-color" content="#16100b">
-<meta property="og:type" content="website">
-<meta property="og:site_name" content="FotoMaliayo">
-<meta property="og:locale" content="es_ES">
-<meta property="og:title" content="FotoMaliayo · Concurso de fotografía de Villaviciosa">
-<meta property="og:description" content="FotoMaliayo: Certamen rexonal de semeyes etnográfiques d'Asturies y Concurso de fotografía paisajística de Villaviciosa. Bases, ganadores e inscripción.">
-<meta property="og:url" content="https://fotomaliayo.es/">
-<meta property="og:image" content="https://fotomaliayo.es/img/cartel-2026.jpg">
-<meta property="og:image:alt" content="Cartel de FotoMaliayo 2026">
-<meta name="twitter:card" content="summary_large_image">
-<link rel="icon" href="img/favicon.svg" type="image/svg+xml">
-<link rel="stylesheet" href="css/variables.css">
-<link rel="stylesheet" href="css/global.css">
-<link rel="stylesheet" href="css/componentes/lightbox.css">
-<link rel="stylesheet" href="css/paginas/inicio.css">
-<script src="js/datos/config.js" defer></script>
-<script src="js/datos/entidades.js" defer></script>
-<script src="js/lib/utilidades.js" defer></script>
-<script src="js/componentes/sitio.js" defer></script>
-<script src="js/datos/ganadores.js" defer></script>
-<script src="js/componentes/lightbox.js" defer></script>
-<script src="js/paginas/inicio.js" defer></script>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>FotoMaliayo · Concurso de fotografía de Villaviciosa</title>
+  <meta name="description"
+    content="FotoMaliayo: Certamen rexonal de semeyes etnográfiques d'Asturies y Concurso de fotografía paisajística de Villaviciosa. Bases, ganadores e inscripción.">
+  <link rel="canonical" href="https://fotomaliayo.es/">
+  <meta name="theme-color" content="#16100b">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="FotoMaliayo">
+  <meta property="og:locale" content="es_ES">
+  <meta property="og:title" content="FotoMaliayo · Concurso de fotografía de Villaviciosa">
+  <meta property="og:description"
+    content="FotoMaliayo: Certamen rexonal de semeyes etnográfiques d'Asturies y Concurso de fotografía paisajística de Villaviciosa. Bases, ganadores e inscripción.">
+  <meta property="og:url" content="https://fotomaliayo.es/">
+  <meta property="og:image" content="https://fotomaliayo.es/img/cartel-2026.jpg">
+  <meta property="og:image:alt" content="Cartel de FotoMaliayo 2026">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="icon" href="img/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="css/variables.css">
+  <link rel="stylesheet" href="css/global.css">
+  <link rel="stylesheet" href="css/componentes/lightbox.css">
+  <link rel="stylesheet" href="css/paginas/inicio.css">
+  <script src="js/datos/config.js" defer></script>
+  <script src="js/datos/entidades.js" defer></script>
+  <script src="js/lib/utilidades.js" defer></script>
+  <script src="js/componentes/sitio.js" defer></script>
+  <script src="js/datos/ganadores.js" defer></script>
+  <script src="js/componentes/lightbox.js" defer></script>
+  <script src="js/paginas/inicio.js" defer></script>
 </head>
+
 <body>
-<a class="skip" href="#contenido">Saltar al contenido</a>
+  <a class="skip" href="#contenido">Saltar al contenido</a>
 
-<header>
-  <a href="./" aria-current="page">FotoMaliayo</a>
-  <nav aria-label="Principal">
-    <a href="ganadores.html">Ganadores</a>
-    <a href="bases.html">Bases</a>
-    <a href="participar.html" class="cta">Participar</a>
-  </nav>
-</header>
-
-<main id="contenido">
-  <section class="hero" aria-labelledby="t-inicio">
-    <div>
-      <h1 id="t-inicio">FotoMaliayo</h1>
-      <p>Concurso de fotografía de Villaviciosa</p>
-      <ul>
-        <li class="etno" lang="ast">Certamen rexonal de semeyes etnográfiques d'Asturies</li>
-        <li class="paisaje">Concurso de fotografía paisajística de Villaviciosa</li>
-      </ul>
-      <p>Desde 2023, FotoMaliayo invita a recorrer Asturias con la cámara para poner en valor su paisaje y su paisanaje: los usos y tradiciones de nuestros pueblos y la naturaleza que los rodea.</p>
-      <p class="acciones">
-        <a class="btn" href="ganadores.html">Ver los ganadores</a>
-        <a class="btn ghost" href="bases.html">Bases de la edición actual</a>
-      </p>
-    </div>
-    <!-- La foto y el pie se actualizan desde «portada» en js/datos/config.js -->
-    <figure id="portada">
-      <button type="button" aria-haspopup="dialog" data-img="img/fotos/portada/entrega-premios-2025.jpg" data-cap="Entrega de premios de la edición 2025 en el Teatro Riera de Villaviciosa.">
-        <img src="img/fotos/portada/entrega-premios-2025.jpg" width="1000" height="522" alt="Premiados de FotoMaliayo 2025 posando con sus diplomas en el escenario del Teatro Riera de Villaviciosa.">
-      </button>
-      <figcaption>Entrega de premios de la edición 2025 en el Teatro Riera de Villaviciosa.</figcaption>
-    </figure>
-  </section>
-
-  <!-- Los datos de la edición se actualizan desde js/datos/config.js -->
-  <section class="edition" aria-labelledby="t-edicion">
-    <figure>
-      <img id="cartel" src="img/cartel-2026.jpg" width="900" height="1273" alt="Cartel de FotoMaliayo 2026: retratos de los homenajeados en un entorno rural asturiano, con la información del certamen.">
-    </figure>
-    <div>
-      <h2 id="t-edicion">Edición <span data-config="edicion">2026</span></h2>
-      <p class="meta" id="edicion-meta">IV edición, en homenaje a Ambas y Ramses (ATOAM).</p>
-      <p class="status" id="estado-abierta" hidden>
-        <strong>Inscripción abierta hasta el <span data-fecha-limite></span></strong>
-        <a href="participar.html">Inscríbete y envía tus fotografías</a>
-      </p>
-      <p class="status" id="estado-cerrada" hidden>
-        <strong>El plazo de inscripción está cerrado</strong>
-        Entrega de premios: <span data-config="entregaPremios">sábado 17 de octubre, en el Teatro Riera de Villaviciosa</span>.
-      </p>
-      <p data-config="resumenPremios">3.000 € en premios y exposición de las obras seleccionadas en gran formato por el casco antiguo de Villaviciosa.</p>
-      <ol id="calendario">
-        <li><strong>1 de octubre</strong> <span>Último día para enviar fotografías, hasta las 23:59.</span></li>
-        <li><strong>Tras el fallo</strong> <span>Los seleccionados tienen 2 días para enviar el archivo a máxima resolución.</span></li>
-        <li><strong>17 de octubre</strong> <span>Entrega de premios en el Teatro Riera de Villaviciosa.</span></li>
-      </ol>
-      <p><a href="bases.html">Leer las bases de la edición <span data-config="edicion">2026</span></a></p>
-    </div>
-  </section>
-
-  <section class="two" aria-label="Los dos certámenes">
-    <div>
-      <h2 class="etno" lang="ast">Semeyes etnográfiques</h2>
-      <p>Fotografías que muestren los usos, costumbres y oficios tradicionales de Asturias. El jurado valora tanto la calidad técnica como el valor documental. Cada edición incluye además una categoría especial.</p>
-    </div>
-    <div>
-      <h2 class="paisaje">Fotografía paisajística</h2>
-      <p>Montaña, deportes en el medio natural, la mar y la costa asturiana, y accésits como Villaviciosa o Carreres por montaña. El paisaje predominantemente natural es el protagonista.</p>
-    </div>
-  </section>
-
-  <template id="tpl-fecha">
-    <li><strong>Fecha</strong> <span></span></li>
-  </template>
-</main>
-
-<dialog id="lightbox" aria-label="Fotografía ampliada">
-  <form method="dialog"><button class="btn ghost">Cerrar</button></form>
-  <figure><figcaption></figcaption></figure>
-</dialog>
-
-<footer>
-  <section class="entities" aria-label="Entidades organizadoras y colaboradoras">
-    <div>
-      <h2>Organizan</h2>
-      <ul data-entidades="org"></ul>
-    </div>
-    <div>
-      <h2>Colaboran</h2>
-      <ul data-entidades="col"></ul>
-    </div>
-  </section>
-  <div class="foot-grid">
-    <section aria-labelledby="pie-fotomaliayo">
-      <h2 id="pie-fotomaliayo">FotoMaliayo</h2>
-      <p>Concurso de fotografía de Villaviciosa: <span lang="ast">Certamen rexonal de semeyes etnográfiques d'Asturies</span> y Concurso de fotografía paisajística.</p>
-      <p>fotomaliayo.es</p>
-    </section>
-    <section aria-labelledby="pie-contacto">
-      <h2 id="pie-contacto">Contacto</h2>
-      <ul>
-        <li><a href="mailto:concursofotografiavillaviciosa@gmail.com">concursofotografiavillaviciosa@gmail.com</a></li>
-        <li><a href="https://www.instagram.com/fotomaliayo/" rel="noopener" target="_blank">Instagram @fotomaliayo</a></li>
-        <li><a href="https://www.facebook.com/concursofotografiavillaviciosa" rel="noopener" target="_blank">Facebook de FotoMaliayo</a></li>
-      </ul>
-    </section>
-    <nav aria-labelledby="pie-legal">
-      <h2 id="pie-legal">Información legal</h2>
-      <ul>
-        <li><a href="bases.html">Bases del concurso</a></li>
-        <li><a href="aviso-legal.html">Aviso legal</a></li>
-        <li><a href="privacidad.html">Política de privacidad</a></li>
-        <li><a href="cookies.html">Política de cookies</a></li>
-      </ul>
+  <header>
+    <a href="./" aria-current="page">FotoMaliayo</a>
+    <nav aria-label="Principal">
+      <a href="ganadores.html">Ganadores</a>
+      <a href="bases.html">Bases</a>
+      <a href="participar.html" class="cta">Participar</a>
     </nav>
-  </div>
-</footer>
+  </header>
+
+  <main id="contenido">
+    <section class="hero" aria-labelledby="t-inicio">
+      <div>
+        <h1 id="t-inicio">FotoMaliayo</h1>
+        <p>Concurso de fotografía de Villaviciosa</p>
+        <ul>
+          <li class="etno" lang="ast">Certamen rexonal de semeyes etnográfiques d'Asturies</li>
+          <li class="paisaje">Concurso de fotografía paisajística de Villaviciosa</li>
+        </ul>
+        <p>Desde 2023, FotoMaliayo invita a recorrer Asturias con la cámara para poner en valor su paisaje y su
+          paisanaje: los usos y tradiciones de nuestros pueblos y la naturaleza que los rodea.</p>
+        <p class="acciones">
+          <a class="btn" href="ganadores.html">Ver los ganadores</a>
+          <a class="btn ghost" href="bases.html">Bases de la edición actual</a>
+        </p>
+      </div>
+      <!-- La foto y el pie se actualizan desde «portada» en js/datos/config.js -->
+      <figure id="portada">
+        <button type="button" aria-haspopup="dialog" data-img="img/fotos/portada/entrega-premios-2025.jpg"
+          data-cap="Entrega de premios de la edición 2025 en el Teatro Riera de Villaviciosa.">
+          <img src="img/fotos/portada/entrega-premios-2025.jpg" width="1000" height="522"
+            alt="Premiados de FotoMaliayo 2025 posando con sus diplomas en el escenario del Teatro Riera de Villaviciosa.">
+        </button>
+        <figcaption>Entrega de premios de la edición 2025 en el Teatro Riera de Villaviciosa.</figcaption>
+      </figure>
+    </section>
+
+    <!-- Los datos de la edición se actualizan desde js/datos/config.js -->
+    <section class="edition" aria-labelledby="t-edicion">
+      <figure>
+        <img id="cartel" src="img/cartel-2026.jpg" width="900" height="1273"
+          alt="Cartel de FotoMaliayo 2026: retratos de los homenajeados en un entorno rural asturiano, con la información del certamen.">
+      </figure>
+      <div>
+        <h2 id="t-edicion">Edición <span data-config="edicion">2026</span></h2>
+        <p class="meta" id="edicion-meta">IV edición, en homenaje a Ambas y Ramses (ATOAM).</p>
+        <p class="status" id="estado-abierta" hidden>
+          <strong>Inscripción abierta hasta el <span data-fecha-limite></span></strong>
+          <a href="participar.html">Inscríbete y envía tus fotografías</a>
+        </p>
+        <p class="status" id="estado-cerrada" hidden>
+          <strong>El plazo de inscripción está cerrado</strong>
+          Entrega de premios:
+          <span data-config="entregaPremios">sábado 17 de octubre, en el Teatro Riera de
+            Villaviciosa
+          </span>
+          .
+        </p>
+        <p data-config="resumenPremios">3.000 € en premios y exposición de las obras seleccionadas en gran formato por
+          el casco antiguo de Villaviciosa.</p>
+        <ol id="calendario">
+          <li><strong>1 de octubre</strong> <span>Último día para enviar fotografías, hasta las 23:59.</span></li>
+          <li><strong>Tras el fallo</strong> <span>Los seleccionados tienen 2 días para enviar el archivo a máxima
+              resolución.</span></li>
+          <li><strong>17 de octubre</strong> <span>Entrega de premios en el Teatro Riera de Villaviciosa.</span></li>
+        </ol>
+        <p><a href="bases.html">Leer las bases de la edición <span data-config="edicion">2026</span></a></p>
+      </div>
+    </section>
+
+    <section class="two" aria-label="Los dos certámenes">
+      <div>
+        <h2 class="etno" lang="ast">Semeyes etnográfiques</h2>
+        <p>Fotografías que muestren los usos, costumbres y oficios tradicionales de Asturias. El jurado valora tanto la
+          calidad técnica como el valor documental. Cada edición incluye además una categoría especial.</p>
+      </div>
+      <div>
+        <h2 class="paisaje">Fotografía paisajística</h2>
+        <p>Montaña, deportes en el medio natural, la mar y la costa asturiana, y accésits como Villaviciosa o Carreres
+          por montaña. El paisaje predominantemente natural es el protagonista.</p>
+      </div>
+    </section>
+
+    <template id="tpl-fecha">
+      <li><strong>Fecha</strong> <span></span></li>
+    </template>
+  </main>
+
+  <dialog id="lightbox" aria-label="Fotografía ampliada">
+    <form method="dialog"><button class="btn ghost">Cerrar</button></form>
+    <figure>
+      <figcaption></figcaption>
+    </figure>
+  </dialog>
+
+  <footer>
+    <section class="entities" aria-label="Entidades organizadoras y colaboradoras">
+      <div>
+        <h2>Organizan</h2>
+        <ul data-entidades="org"></ul>
+      </div>
+      <div>
+        <h2>Colaboran</h2>
+        <ul data-entidades="col"></ul>
+      </div>
+    </section>
+    <div class="foot-grid">
+      <section aria-labelledby="pie-fotomaliayo">
+        <h2 id="pie-fotomaliayo">FotoMaliayo</h2>
+        <p>Concurso de fotografía de Villaviciosa:
+          <span lang="ast">Certamen rexonal de semeyes etnográfiques
+            d'Asturies</span>
+          y Concurso de fotografía paisajística.
+        </p>
+      </section>
+      <section aria-labelledby="pie-contacto">
+        <h2 id="pie-contacto">Contacto</h2>
+        <ul>
+          <li><a href="mailto:concursofotografiavillaviciosa@gmail.com">concursofotografiavillaviciosa@gmail.com</a>
+          </li>
+          <li><a href="https://www.instagram.com/fotomaliayo/" rel="noopener" target="_blank">Instagram @fotomaliayo</a>
+          </li>
+          <li><a href="https://www.facebook.com/concursofotografiavillaviciosa" rel="noopener" target="_blank">Facebook
+              de FotoMaliayo</a></li>
+        </ul>
+      </section>
+      <nav aria-labelledby="pie-legal">
+        <h2 id="pie-legal">Información legal</h2>
+        <ul>
+          <li><a href="bases.html">Bases del concurso</a></li>
+          <li><a href="aviso-legal.html">Aviso legal</a></li>
+          <li><a href="privacidad.html">Política de privacidad</a></li>
+          <li><a href="cookies.html">Política de cookies</a></li>
+        </ul>
+      </nav>
+    </div>
+  </footer>
 </body>
+
 </html>
