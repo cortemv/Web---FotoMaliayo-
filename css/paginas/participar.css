@@ -2,10 +2,11 @@
    PÁGINA: inscripción (participar.html)
    ===================================================================== */
 
+/* El formulario ocupa el mismo ancho que el contenido del resto de páginas */
 form,
 .done,
 .demo {
-  max-width: 760px;
+  max-width: none;
 }
 
 /* ---------- Grupos del formulario ---------- */

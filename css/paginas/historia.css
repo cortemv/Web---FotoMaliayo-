@@ -1,0 +1,70 @@
+/* =====================================================================
+   PÁGINA: historia del concurso (historia.html)
+   ===================================================================== */
+
+/* ---------- Línea del tiempo de ediciones ---------- */
+.ediciones {
+  margin-top: var(--section-gap);
+  padding-top: 3rem;
+  border-top: 1px solid var(--copper-dim);
+}
+
+.ediciones h2 {
+  margin-top: 0;
+}
+
+.ediciones ol {
+  position: relative;
+  margin: 2rem 0 0;
+  padding: 0 0 0 2.2rem;
+  list-style: none;
+}
+
+/* Hilo vertical rojo */
+.ediciones ol::before {
+  content: "";
+  position: absolute;
+  top: 0.6rem;
+  bottom: 0.6rem;
+  left: 0.55rem;
+  border-left: 2px solid var(--red);
+}
+
+.ediciones li {
+  position: relative;
+  padding: 0 0 2.2rem;
+}
+
+/* Punto de cada edición: una pequeña roseta */
+.ediciones li::before {
+  content: "";
+  position: absolute;
+  top: 0.35rem;
+  left: -2.2rem;
+  width: 1.3rem;
+  height: 1.3rem;
+  border-radius: 50%;
+  background: var(--wood) url("../../img/favicon.svg") center / 140% no-repeat;
+  box-shadow: 0 0 0 3px var(--wood);
+}
+
+.ediciones li:last-child {
+  padding-bottom: 0;
+}
+
+.ediciones strong {
+  display: block;
+  font-family: var(--titulo);
+  font-size: 1.6rem;
+  font-weight: normal;
+  line-height: 1.2;
+  color: var(--copper);
+}
+
+.ediciones .actual strong {
+  color: var(--red-text);
+}
+
+.ediciones li p {
+  margin: 0.3rem 0 0;
+}

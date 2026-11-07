@@ -1,5 +1,5 @@
 /* =====================================================================
-   PÁGINA: ganadores de ediciones anteriores (ganadores.html)
+   PÁGINA: fotografías seleccionadas de cada edición (seleccionados.html)
    ===================================================================== */
 
 /* ---------- Pestañas de año ---------- */
@@ -11,7 +11,7 @@
 }
 
 [role="tab"] {
-  padding: 0.45rem 1rem;
+  padding: 0.45rem 1.1rem;
   border: 1px solid var(--copper-dim);
   border-radius: var(--radius);
   background: transparent;
@@ -26,9 +26,9 @@
 }
 
 [role="tab"][aria-selected="true"] {
-  border-color: var(--copper);
-  background: var(--copper);
-  color: var(--wood);
+  border-color: var(--red);
+  background: var(--red);
+  color: var(--parchment);
 }
 
 /* ---------- Índice de categorías ---------- */
@@ -61,14 +61,14 @@
 [role="tabpanel"] h2 {
   margin: 3rem 0 0.4rem;
   padding-bottom: 0.5rem;
-  border-bottom: 1px solid var(--copper-dim);
+  border-bottom: 1px solid var(--red);
   font-size: 1.1rem;
   letter-spacing: 0.05em;
 }
 
 /* ---------- Bloque de categoría ---------- */
 .cat-block {
-  --cat: var(--copper);
+  --cat: var(--red);
   margin: 1.6rem 0 2.6rem;
   padding: 1.2rem 0 0 1.4rem;
   border-left: 4px solid var(--cat);

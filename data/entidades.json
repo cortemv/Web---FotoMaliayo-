@@ -45,20 +45,13 @@
         {
             "nombre": "Ganadería Amable Vega",
             "logo": "img/logos/logo-ganaderia-amable-vega.png",
-            "fondo": "#fcf9f4",
-            "url": "https://www.instagram.com/reel/DVLTIWZDjp9/"
+            "fondo": "#fcf9f4"
         },
         {
             "nombre": "Ediciones Cordillera Cantábrica",
             "logo": "img/logos/logo-cordillera-cantabrica.webp",
             "fondo": "#fefefe",
             "url": "https://www.edicionescordilleracantabrica.com"
-        },
-        {
-            "nombre": "Destino Norte",
-            "logo": "img/logos/logo-destino-norte.jpeg",
-            "fondo": "#e24a3f",
-            "url": "https://destinonorte.es"
         },
         {
             "nombre": "Indigo División",
