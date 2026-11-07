@@ -1,41 +1,50 @@
 /* =====================================================================
    VARIABLES: colores, tipografía y medidas de toda la web
    ---------------------------------------------------------------------
-   Paleta tomada del cartel: madera oscura, pergamino, cobre, rojo y
-   verde azulado. Cambiando un valor aquí se actualiza en todas las páginas.
+   Paleta tomada del diseño «Por y Para Asturies»: fondo negro tostado,
+   rojo carmesí, crema y oro viejo de los nudos celtas. Cambiando un
+   valor aquí se actualiza en todas las páginas.
    No se cargan fuentes externas: así la web no envía datos a terceros.
    ===================================================================== */
 
 :root {
-  /* Fondos (madera) */
-  --wood: #16100b;
-  --wood-2: #211810;
-  --wood-3: #2c2117;
+  /* Fondos */
+  --wood: #15100d;
+  --wood-2: #1f1814;
+  --wood-3: #2a211b;
 
   /* Textos */
-  --parchment: #ecdfc8;
-  --muted: #b9a789;
+  --parchment: #f1e8d6;
+  --muted: #b7a88e;
 
-  /* Acentos */
-  --copper: #cf9a62;
-  --copper-dim: rgba(207, 154, 98, 0.32);
-  --copper-line: rgba(207, 154, 98, 0.5);
-  --red: #c2402f; /* bordes, acentos y títulos grandes */
-  --red-text: #e0533f; /* rojo para texto pequeño sobre fondo oscuro (contraste AA) */
-  --red-strong: #a83526; /* fondo de la etiqueta «Ganador» (contraste AA con el pergamino) */
-  --red-soft: rgba(194, 64, 47, 0.12);
-  --teal: #4a9792;
-  --teal-light: #8cc7c2;
-  --teal-pale: #a9d6d2;
-  --ok: #7fb37a;
+  /* Acentos (oro viejo de los nudos) */
+  --copper: #c9b07a;
+  --copper-dim: rgba(201, 176, 122, 0.24);
+  --copper-line: rgba(201, 176, 122, 0.5);
+
+  /* Rojo carmesí (líneas, menú activo y «Asturies») */
+  --red: #c0242f;
+  --red-text: #e4484f; /* rojo para texto pequeño sobre fondo oscuro (contraste AA) */
+  --red-strong: #a51d26; /* fondo de la etiqueta «Ganador» (contraste AA con el crema) */
+  --red-soft: rgba(192, 36, 47, 0.12);
+
+  /* Color del certamen de paisaje (verde musgo) */
+  --teal: #8fa26a;
+  --teal-light: #b3c48d;
+  --teal-pale: #c9d6ac;
+
+  --ok: #8fbf7f;
   --error: #ff9b8a;
-  --overlay: rgba(10, 7, 4, 0.97);
+  --overlay: rgba(10, 7, 5, 0.97);
   --shadow: 0 18px 40px rgba(0, 0, 0, 0.55);
 
   /* Tipografía */
   --serif:
     "Palatino Linotype", "Book Antiqua", Palatino, "URW Palladio L", "P052",
     Georgia, serif;
+  --titulo:
+    "Iowan Old Style", "Palatino Linotype", "Book Antiqua", Palatino, Georgia,
+    serif;
   --measure: 68ch;
 
   /* Medidas */
@@ -43,4 +52,8 @@
   --gutter: 1.25rem;
   --radius: 2px;
   --section-gap: 4rem;
+
+  /* Cabecera */
+  --linea-roja: 2px solid var(--red);
+  --separador: 1px solid rgba(201, 176, 122, 0.28);
 }

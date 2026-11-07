@@ -2,9 +2,10 @@
    DATOS DE FOTOMALIAYO
    ---------------------------------------------------------------------
    Todo lo que cambia de un año a otro está en este archivo, salvo:
-     - los ganadores, en js/datos/ganadores.js
-     - los logotipos, en js/datos/entidades.js
-     - los textos (bases y textos legales), en los archivos .md de /data
+     - las fotografías seleccionadas, en js/datos/seleccionados.js
+     - las fotografías de la galería, en js/datos/galeria.js
+     - los logotipos, en data/entidades.json
+     - los textos (historia, bases y textos legales), en los archivos .md de /data
    Reglas para no romper nada:
      - Los textos van entre comillas simples: 'así'. Si un texto lleva
        apóstrofo (d'Asturies), usa comillas dobles: "d'Asturies".
@@ -16,6 +17,7 @@ const CONFIG = {
   /* ---------- Edición actual ---------- */
   edicion: 2026,                 // año
   numeroEdicion: 'IV',           // en números romanos
+  primeraEdicion: 2023,          // año de la I edición (para la historia)
   dedicatoria: 'en homenaje a Ambas y Ramses (ATOAM)',   // '' si no hay
   cartel: 'img/cartel-2026.jpg', // archivo del cartel dentro de la carpeta img/
   cartelAlt: 'Cartel de FotoMaliayo 2026: retratos de los homenajeados en un entorno rural asturiano, con la información del certamen.',
@@ -42,7 +44,7 @@ const CONFIG = {
     img: 'img/fotos/portada/entrega-premios-2025.jpg',
     pie: 'Entrega de premios de la edición 2025 en el Teatro Riera de Villaviciosa.',
     alt: 'Premiados de FotoMaliayo 2025 posando con sus diplomas en el escenario del Teatro Riera de Villaviciosa.',
-    // Si dejas img: '' se muestra esta foto premiada en su lugar
+    // Si dejas img: '' se muestra esta foto seleccionada en su lugar
     premiada: { edicion: 2024, autor: 'Gerardo Alonso' }
   },
 
@@ -85,6 +87,7 @@ const CERTAMENES = {
 const VARIABLES_DOCUMENTOS = {
   "año": CONFIG.edicion,
   numeroEdicion: CONFIG.numeroEdicion,
+  primeraEdicion: CONFIG.primeraEdicion,
   titular: CONFIG.titular.nombre,
   nif: CONFIG.titular.nif,
   domicilio: CONFIG.titular.domicilio,

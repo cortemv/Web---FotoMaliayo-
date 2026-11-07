@@ -7,11 +7,14 @@
 
 (() => {
   /* ---------- Enlaces antiguos ----------
-     La web anterior era una sola página con secciones (#bases, #ganadores…).
-     Si alguien llega con uno de esos enlaces, se le lleva a la página nueva. */
+     Si alguien llega con un enlace de la web anterior (#ganadores, #bases…)
+     se le lleva a la página nueva que corresponde. */
   const PAGINAS_ANTIGUAS = {
     inicio: "./",
-    ganadores: "ganadores.html",
+    historia: "historia.html",
+    ganadores: "seleccionados.html",
+    seleccionados: "seleccionados.html",
+    galeria: "galeria.html",
     bases: "bases.html",
     participar: "participar.html",
     "aviso-legal": "aviso-legal.html",
@@ -33,14 +36,14 @@
     if (portada.img) {
       return { img: portada.img, alt: portada.alt || portada.pie, pie: portada.pie };
     }
-    // Sin foto propia: se muestra una de las fotografías premiadas.
-    const g =
-      GANADORES.find((x) => x.edicion === portada.premiada.edicion && x.autor === portada.premiada.autor) ||
-      GANADORES[0];
+    // Sin foto propia: se muestra una de las fotografías seleccionadas.
+    const s =
+      SELECCIONADOS.find((x) => x.edicion === portada.premiada.edicion && x.autor === portada.premiada.autor) ||
+      SELECCIONADOS[0];
     return {
-      img: g.img,
-      alt: `Fotografía de ${g.autor}, premiada en ${g.edicion}`,
-      pie: `${g.autor}. ${g.premio}${g.categoria ? ", " + g.categoria : ""}, ${CERTAMENES[g.certamen].corto}, ${g.edicion}.`,
+      img: s.img,
+      alt: `Fotografía de ${s.autor}, seleccionada en ${s.edicion}`,
+      pie: `${s.autor}. ${s.premio}${s.categoria ? ", " + s.categoria : ""}, ${CERTAMENES[s.certamen].corto}, ${s.edicion}.`,
     };
   }
 
