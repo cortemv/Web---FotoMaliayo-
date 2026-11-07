@@ -1,41 +1,40 @@
 /* =====================================================================
-   PÁGINA: ganadores de ediciones anteriores (ganadores.html)
+   PÁGINA: fotografías seleccionadas de cada edición (seleccionados.html)
    ---------------------------------------------------------------------
    Crea una pestaña por edición y, para la edición elegida, el índice de
-   categorías y la galería de obras premiadas, a partir de
-   js/datos/ganadores.js. La estructura de cada pieza está en los
-   <template> de ganadores.html.
+   categorías y la galería de obras seleccionadas, a partir de
+   js/datos/seleccionados.js. La estructura de cada pieza está en los
+   <template> de seleccionados.html.
    Se puede enlazar a una edición o categoría concreta:
-     ganadores.html#2024   ganadores.html#2025-paisaje-montana
+     seleccionados.html#2024   seleccionados.html#2025-paisaje-montana
    ===================================================================== */
 
 (() => {
   const ORDINALES = ["I", "II", "III", "IV", "V", "VI", "VII", "VIII", "IX", "X"];
-  const PRIMERA_EDICION = 2023;
   const CATEGORIA_UNICA = "Categoría única";
 
   const listaPestanas = $("#pestanas");
   const panel = $("#panel");
-  const ediciones = [...new Set(GANADORES.map((g) => g.edicion))].sort((a, b) => b - a);
+  const ediciones = [...new Set(SELECCIONADOS.map((s) => s.edicion))].sort((a, b) => b - a);
   let edicionActual;
 
   /* ---------- Piezas de la galería ---------- */
-  const pieDeFoto = (g) =>
-    `${g.titulo ? "«" + g.titulo + "», " : ""}${g.autor}. ${g.premio}${g.categoria ? ", " + g.categoria : ""}, ${g.edicion}.`;
+  const pieDeFoto = (s) =>
+    `${s.titulo ? "«" + s.titulo + "», " : ""}${s.autor}. ${s.premio}${s.categoria ? ", " + s.categoria : ""}, ${s.edicion}.`;
 
-  function crearObra(g, nombreCategoria) {
+  function crearObra(s, nombreCategoria) {
     const figura = clonarPlantilla("tpl-obra").firstElementChild;
     const boton = $("button", figura);
 
-    if (g.img) {
+    if (s.img) {
       const imagen = document.createElement("img");
-      imagen.src = g.mini || g.img;
-      if (g.w) imagen.width = g.w;
-      if (g.h) imagen.height = g.h;
-      imagen.alt = `Fotografía de ${g.autor}, ${g.premio.toLowerCase()} en ${nombreCategoria} ${g.edicion}`;
+      imagen.src = s.mini || s.img;
+      if (s.w) imagen.width = s.w;
+      if (s.h) imagen.height = s.h;
+      imagen.alt = `Fotografía de ${s.autor}, ${s.premio.toLowerCase()} en ${nombreCategoria} ${s.edicion}`;
       imagen.loading = "lazy";
-      boton.dataset.img = g.img;
-      boton.dataset.cap = pieDeFoto(g);
+      boton.dataset.img = s.img;
+      boton.dataset.cap = pieDeFoto(s);
       boton.append(imagen);
     } else {
       const hueco = document.createElement("p");
@@ -45,14 +44,14 @@
     }
 
     const premio = $(".prize", figura);
-    premio.textContent = g.premio;
-    premio.classList.toggle("win", g.premio === "Ganador");
+    premio.textContent = s.premio;
+    premio.classList.toggle("win", s.premio === "Ganador");
 
     const titulo = $("cite", figura);
-    if (g.titulo) titulo.textContent = g.titulo;
+    if (s.titulo) titulo.textContent = s.titulo;
     else titulo.remove();
 
-    $(".author", figura).textContent = g.autor;
+    $(".author", figura).textContent = s.autor;
     return figura;
   }
 
@@ -63,7 +62,7 @@
     $("h3", bloque).textContent = nombre;
     $("h3", bloque).id = `${id}-titulo`;
     bloque.setAttribute("aria-labelledby", `${id}-titulo`);
-    $(".gallery", bloque).append(...obras.map((g) => crearObra(g, nombre)));
+    $(".gallery", bloque).append(...obras.map((s) => crearObra(s, nombre)));
     return bloque;
   }
 
@@ -77,14 +76,14 @@
 
   /* ---------- Una edición ---------- */
   function mostrarEdicion(edicion) {
-    const obras = GANADORES.filter((g) => g.edicion === edicion);
-    const ordinal = ORDINALES[edicion - PRIMERA_EDICION] || "";
+    const obras = SELECCIONADOS.filter((s) => s.edicion === edicion);
+    const ordinal = ORDINALES[edicion - CONFIG.primeraEdicion] || "";
     $("#ordinal").textContent = `${ordinal ? ordinal + " edición, " : ""}${edicion}`;
 
     const enlaces = [];
     const contenido = [];
     for (const certamen of ["etno", "paisaje"]) {
-      const delCertamen = obras.filter((g) => g.certamen === certamen);
+      const delCertamen = obras.filter((s) => s.certamen === certamen);
       if (!delCertamen.length) continue;
 
       const titulo = clonarPlantilla("tpl-certamen").firstElementChild;
@@ -92,12 +91,12 @@
       titulo.classList.add(certamen);
       contenido.push(titulo);
 
-      for (const categoria of new Set(delCertamen.map((g) => g.categoria))) {
+      for (const categoria of new Set(delCertamen.map((s) => s.categoria))) {
         const nombre = categoria || CATEGORIA_UNICA;
         const id = `${edicion}-${certamen}-${slug(nombre)}`;
         const textoIndice = certamen === "etno" && !categoria ? CERTAMENES.etno.corto : nombre;
         enlaces.push(crearEnlaceIndice(id, certamen, textoIndice));
-        contenido.push(crearCategoria(id, certamen, nombre, delCertamen.filter((g) => g.categoria === categoria)));
+        contenido.push(crearCategoria(id, certamen, nombre, delCertamen.filter((s) => s.categoria === categoria)));
       }
     }
 

@@ -1,5 +1,6 @@
 /* =====================================================================
-   GANADORES DE TODAS LAS EDICIONES
+   FOTOGRAFÍAS SELECCIONADAS DE TODAS LAS EDICIONES
+   (ganadores, finalistas y menciones; se muestran en seleccionados.html)
    ---------------------------------------------------------------------
    Una línea por fotografía. Copia una línea existente y cambia los datos.
      edicion:   año
@@ -16,7 +17,7 @@
    El orden de las líneas es el orden en que aparecen en la web.
    ===================================================================== */
 
-const GANADORES = [
+const SELECCIONADOS = [
   {"edicion": 2023, "certamen": "etno", "categoria": "", "premio": "Ganador", "autor": "Bernardo Busto", "titulo": "", "img": "img/fotos/2023/etno-categoria-unica-bernardo-busto.jpg", "mini": "img/fotos/2023/etno-categoria-unica-bernardo-busto-mini.jpg", "w": 720, "h": 474},
   {"edicion": 2023, "certamen": "etno", "categoria": "", "premio": "Finalista", "autor": "Ignacio Senis Prada", "titulo": "", "img": "img/fotos/2023/etno-categoria-unica-ignacio-senis-prada.jpg", "mini": "img/fotos/2023/etno-categoria-unica-ignacio-senis-prada-mini.jpg", "w": 576, "h": 720},
   {"edicion": 2023, "certamen": "etno", "categoria": "", "premio": "Finalista", "autor": "Pepe Heredia", "titulo": "", "img": "img/fotos/2023/etno-categoria-unica-pepe-heredia.jpg", "mini": "img/fotos/2023/etno-categoria-unica-pepe-heredia-mini.jpg", "w": 720, "h": 540},

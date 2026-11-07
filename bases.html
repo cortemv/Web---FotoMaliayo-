@@ -8,7 +8,7 @@
   <meta name="description"
     content="Bases de la edición actual de FotoMaliayo: participantes, categorías, requisitos de las fotografías, plazos, jurado y premios del concurso de fotografía de Villaviciosa.">
   <link rel="canonical" href="https://fotomaliayo.es/bases.html">
-  <meta name="theme-color" content="#16100b">
+  <meta name="theme-color" content="#15100d">
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="FotoMaliayo">
   <meta property="og:locale" content="es_ES">
@@ -24,7 +24,6 @@
   <link rel="stylesheet" href="css/global.css">
   <link rel="stylesheet" href="css/componentes/documento.css">
   <script src="js/datos/config.js" defer></script>
-  <script src="js/datos/entidades.js" defer></script>
   <script src="js/lib/utilidades.js" defer></script>
   <script src="js/componentes/sitio.js" defer></script>
   <script src="js/lib/texto.js" defer></script>
@@ -36,11 +35,42 @@
   <a class="skip" href="#contenido">Saltar al contenido</a>
 
   <header>
-    <a href="./">FotoMaliayo</a>
+    <div class="banner">
+      <a class="marca" href="./">
+        <img src="img/logo-fotomaliayo.png" width="1298" height="849" alt="FotoMaliayo">
+      </a>
+      <p class="lema">
+        <span class="por-y-para">Por y Para</span>
+        <strong lang="ast">Asturies</strong>
+        <span class="filete"><img src="img/decoracion/trisquel.svg" width="40" height="40" alt=""></span>
+        <em>Paisaje y paisanaje</em>
+      </p>
+    </div>
     <nav aria-label="Principal">
-      <a href="ganadores.html">Ganadores</a>
-      <a href="bases.html" aria-current="page">Bases</a>
-      <a href="participar.html" class="cta">Participar</a>
+      <a href="./">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path class="relleno" d="M12 2.6 1.8 11.4a.6.6 0 0 0 .4 1.1H4.5V21a.8.8 0 0 0 .8.8h4.6v-6.3h4.2v6.3h4.6a.8.8 0 0 0 .8-.8v-8.5h2.3a.6.6 0 0 0 .4-1.1z"/></svg>
+        Inicio
+      </a>
+      <a href="historia.html">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M2.5 5.2c3.3-1.3 6.5-1.1 9.5 1 3-2.1 6.2-2.3 9.5-1v14c-3.3-1.3-6.5-1.1-9.5 1-3-2.1-6.2-2.3-9.5-1z"/><path d="M12 6.2v14"/></svg>
+        Historia
+      </a>
+      <a href="bases.html" aria-current="page">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 2.5h8.5l4 4v15H6z"/><path d="M14.5 2.5v4h4"/><path d="M9 10.5h6.5M9 13.5h6.5M9 16.5h6.5"/></svg>
+        Bases
+      </a>
+      <a href="seleccionados.html">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 3h10v5.5a5 5 0 0 1-10 0z"/><path d="M7 5H3.8v1.4A3.6 3.6 0 0 0 7.4 10M17 5h3.2v1.4A3.6 3.6 0 0 1 16.6 10"/><path d="M12 13.5v3.6"/><path d="M8.3 21h7.4l-.9-3.9H9.2z"/></svg>
+        Seleccionados
+      </a>
+      <a href="galeria.html">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3.5" width="18" height="17" rx="1"/><circle cx="15.5" cy="8.5" r="1.6"/><path d="m5.5 18 4.6-6.2 3.4 4.2 2.2-2.6 3 4.6z"/></svg>
+        Galería
+      </a>
+      <a href="participar.html">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><g class="relleno"><circle cx="12" cy="7" r="3.1"/><circle cx="5.2" cy="8.6" r="2.4"/><circle cx="18.8" cy="8.6" r="2.4"/><path d="M6.6 19.5v-2.6a5.4 5.4 0 0 1 10.8 0v2.6z"/><path d="M5.1 18.3H.9v-1.8a4.2 4.2 0 0 1 6-3.8 7 7 0 0 0-1.8 4.3zM18.9 18.3h4.2v-1.8a4.2 4.2 0 0 0-6-3.8 7 7 0 0 1 1.8 4.3z"/></g></svg>
+        Participación
+      </a>
     </nav>
   </header>
 
@@ -48,177 +78,90 @@
     <!-- El texto se edita en data/bases.md. Lo que hay dentro de <article> se genera con
      «node herramientas/generar-documentos.mjs» (ver GUIA-ACTUALIZACION.md). -->
     <article class="doc con-entradilla" data-md="data/bases.md">
-      <h1 id="bases-de-la-edicion-2026">Bases de la edición 2026</h1>
-      <p>FotoMaliayo 2026: IV Certamen rexonal de semeyes etnográfiques d&#39;Asturies e IV Concurso de fotografía
-        paisajística de Villaviciosa.</p>
-      <h2 id="1-organizacion">1. Organización</h2>
-      <p>El concurso lo organizan el Grupo de Montaña Llamaello, el Ayuntamiento de Villaviciosa y Rodiles Surf Llar,
-        con la colaboración de las entidades que figuran en el cartel. El responsable del concurso y del tratamiento de
-        los datos de los participantes es Manuel Ángel Toral Fernández (datos de contacto en el <a
-          href="aviso-legal.html">aviso legal</a>).</p>
-      <h2 id="2-participantes">2. Participantes</h2>
-      <p>Puede participar cualquier persona aficionada o profesional de la fotografía, de España o de fuera, que sea
-        mayor de 18 años. Las personas menores de edad pueden participar con la autorización de su padre, madre o tutor
-        legal, que deberá enviarse a la organización antes de que finalice el plazo.</p>
-      <p>Los miembros del jurado y sus familiares directos no pueden participar.</p>
-      <h2 id="3-certamenes-y-categorias">3. Certámenes y categorías</h2>
-      <p><strong>Certamen rexonal de semeyes etnográfiques d&#39;Asturies.</strong> Categoría única, más una categoría
-        especial cada edición (en 2026, «El hórreo»). Se buscan las mejores fotografías que representen los usos y
-        tradiciones de Asturias, y se valora tanto la calidad técnica como el valor documental.</p>
-      <p><strong>Concurso de fotografía paisajística «Villaviciosa de Asturies».</strong> Categorías:</p>
-      <ul>
-        <li>Montaña, media montaña, bosques y ríos.</li>
-        <li>Deportes en el mediu natural.</li>
-        <li>Accésit Carreres por montaña en Asturies: deportistas corriendo por el monte, la costa o similares, en
-          prueba deportiva o en sesión libre. No se admiten cross ni carreras en asfalto. Ámbito de Asturias y zonas
-          limítrofes, como la vertiente sur de la Cordillera Cantábrica.</li>
-        <li>La mar d&#39;Asturies y su franja costera.</li>
-        <li>Accésit Villaviciosa: temática libre, siempre que la fotografía esté tomada dentro del concejo.</li>
-        <li>Socios LlamaEllo: imágenes de cualquier actividad del socio, no solo con el club. Los socios deben indicarlo
-          expresamente.</li>
-      </ul>
-      <p>En todas las categorías de paisaje el jurado valorará que el paisaje sea predominantemente natural. Se admite
-        algún elemento humano por motivos compositivos, de escala o por su valor histórico o artístico. El jurado podrá
-        cambiar una fotografía de categoría si con ello gana valor.</p>
-      <h2 id="4-requisitos-de-las-fotografias">4. Requisitos de las fotografías</h2>
-      <ul>
-        <li>Formato JPG sin compresión adicional, de al menos 1920 píxeles en el lado mayor y un máximo de 20 MB por
-          archivo.</li>
-        <li>Sin marcos, bordes, firmas ni marcas de agua.</li>
-        <li>Se admiten imágenes en blanco y negro o escala de grises.</li>
-        <li>No se admiten imágenes creadas o modificadas sustancialmente con inteligencia artificial, ni montajes o
-          ediciones que desvirtúen la fotografía original. La organización podrá pedir el archivo RAW o el original de
-          cualquier fotografía.</li>
-        <li>No hay límite de antigüedad, pero la fotografía debe ser obra del participante.</li>
-        <li>Máximo de 3 fotografías al Certamen de semeyes etnográfiques y de 5 al Concurso de fotografía paisajística.
-        </li>
-      </ul>
-      <h2 id="5-inscripcion">5. Inscripción</h2>
-      <p>La participación se realiza mediante el <a href="participar.html">formulario de inscripción</a> de esta web,
-        indicando para cada fotografía el título, una breve descripción y la categoría. Se recomienda contar en la
-        descripción la técnica empleada y la historia de la imagen: ayuda al jurado a interpretarla.</p>
-      <p>La participación es gratuita. El contacto con los participantes se hará por correo electrónico o por teléfono,
-        incluido WhatsApp.</p>
-      <h2 id="6-plazo">6. Plazo</h2>
-      <p>El plazo de admisión termina el 1 de octubre de 2026 a las 23:59 (hora peninsular española).</p>
-      <h2 id="7-jurado">7. Jurado</h2>
-      <p>El jurado está formado por personas de reconocida experiencia en los temas a evaluar. Recibe las fotografías de
-        forma anónima, identificadas solo con un código, para garantizar la imparcialidad. El fallo es inapelable. El
-        jurado puede declarar desierto cualquier premio si considera que las obras no alcanzan el nivel suficiente.</p>
-      <h2 id="8-premios">8. Premios</h2>
-      <p>La entrega de premios será el sábado 17 de octubre de 2026 en el Teatro Riera de Villaviciosa.</p>
-      <p><em>Certamen rexonal de semeyes etnográfiques d&#39;Asturies</em></p>
-      <div class="table-scroll" tabindex="0">
-        <table>
-          <thead>
-            <tr>
-              <th>Premio</th>
-              <th class="alinear-derecha">Importe</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>Ganador</td>
-              <td class="alinear-derecha">250 €</td>
-            </tr>
-            <tr>
-              <td>Mención de honor</td>
-              <td class="alinear-derecha">150 €</td>
-            </tr>
-            <tr>
-              <td>Finalista</td>
-              <td class="alinear-derecha">75 €</td>
-            </tr>
-            <tr>
-              <td>Categoría especial 2026 «El hórreo»</td>
-              <td class="alinear-derecha">150 €</td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
-      <p><em>Concurso de fotografía paisajística de Villaviciosa</em></p>
-      <div class="table-scroll" tabindex="0">
-        <table>
-          <thead>
-            <tr>
-              <th>Categoría</th>
-              <th class="alinear-derecha">Ganador</th>
-              <th class="alinear-derecha">Finalista</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>Montaña</td>
-              <td class="alinear-derecha">250 €</td>
-              <td class="alinear-derecha">100 €</td>
-            </tr>
-            <tr>
-              <td>Mar</td>
-              <td class="alinear-derecha">250 €</td>
-              <td class="alinear-derecha">100 €</td>
-            </tr>
-            <tr>
-              <td>Deportes</td>
-              <td class="alinear-derecha">250 €</td>
-              <td class="alinear-derecha">100 €</td>
-            </tr>
-            <tr>
-              <td>Accésit Carreres por montaña</td>
-              <td class="alinear-derecha">100 €</td>
-              <td class="alinear-derecha">—</td>
-            </tr>
-            <tr>
-              <td>Accésit Villaviciosa</td>
-              <td class="alinear-derecha">150 €</td>
-              <td class="alinear-derecha">—</td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
-      <p>Los premios están sujetos a la normativa fiscal vigente.</p>
-      <h2 id="9-ganadores-y-finalistas">9. Ganadores y finalistas</h2>
-      <ul>
-        <li>Tras el fallo, la organización contactará con los seleccionados para pedirles el archivo a máxima
-          resolución, destinado a la impresión en gran formato y a la exposición en el casco antiguo de Villaviciosa.
-          Esta petición es un aviso oficioso, no la comunicación oficial del resultado.</li>
-        <li>Los seleccionados tienen un plazo de 2 días desde el fallo para enviar el archivo. Si no responden, y tras
-          agotar las vías de contacto, se pasará al siguiente clasificado.</li>
-        <li>Los premiados deben recoger el premio en el acto de entrega, en persona o mediante un representante.</li>
-        <li>Durante el acto de entrega se tomarán fotografías que podrán publicarse en esta web y en las redes sociales
-          del concurso. Quien no desee aparecer en ellas puede indicarlo a la organización antes o durante el acto.</li>
-      </ul>
-      <h2 id="10-autoria-derecho-a-la-propia-imagen-y-uso-de-las-obras">10. Autoría, derecho a la propia imagen y uso de
-        las obras</h2>
-      <ul>
-        <li>Cada participante declara ser el único autor y titular de los derechos de las fotografías que presenta, y
-          que no infringen derechos de terceros.</li>
-        <li>Si en una fotografía aparecen personas reconocibles, el participante declara contar con su consentimiento
-          para presentarla al concurso y para los usos descritos en estas bases. En el caso de menores, el
-          consentimiento debe darlo su padre, madre o tutor. El participante asume la responsabilidad ante cualquier
-          reclamación de terceros.</li>
-        <li>El autor conserva en todo momento sus derechos de autor. Al participar, autoriza a la organización a mostrar
-          las fotografías presentadas durante el desarrollo del concurso y a comunicar el resultado.</li>
-        <li>Para las fotografías premiadas y finalistas, el autor concede a la organización una licencia no exclusiva,
-          gratuita, sin límite de tiempo ni territorio, para reproducirlas y comunicarlas públicamente en exposiciones,
-          proyecciones, esta web, redes sociales y material de difusión del propio concurso, citando siempre el nombre
-          del autor. Esta licencia no permite vender las fotografías ni cederlas a terceros para fines comerciales.</li>
-      </ul>
-      <h2 id="11-proteccion-de-datos">11. Protección de datos</h2>
-      <p>Los datos de los participantes se tratan según la <a href="privacidad.html">política de privacidad</a>. El
-        nombre de los premiados y finalistas se publicará junto a sus obras en esta web, en redes sociales y en la
-        exposición.</p>
-      <h2 id="12-aceptacion-y-modificaciones">12. Aceptación y modificaciones</h2>
-      <p>Participar supone aceptar estas bases. La organización puede descalificar las fotografías que no las cumplan.
-        Si por causa de fuerza mayor o para mejorar las condiciones de los participantes (ampliación de plazos, mejora
-        de premios) fuese necesario modificarlas, los cambios se publicarán en esta web y en las redes sociales del
-        concurso.</p>
-      <h2 id="recomendaciones">Recomendaciones</h2>
-      <p>El concurso se inspira en la máxima «No se puede amar lo que no se conoce, ni defender lo que no se ama»:
-        mostrar la belleza que nos rodea para despertar respeto y cariño por nuestro paisaje, nuestro paisanaje y su
-        historia. Pedimos a los participantes que sigan el <a
-          href="https://www.aefona.org/wp-content/uploads/2021/11/decalogo-etico-v2021-09.pdf" target="_blank"
-          rel="noopener">decálogo ético de AEFONA</a> (Asociación Española de Fotógrafos de Naturaleza).</p>
-    </article>
+<h1 id="bases-de-la-edicion-2026">Bases de la edición 2026</h1>
+<p>FotoMaliayo 2026: IV Certamen rexonal de semeyes etnográfiques d&#39;Asturies e IV Concurso de fotografía paisajística de Villaviciosa.</p>
+<h2 id="1-organizacion">1. Organización</h2>
+<p>El concurso lo organizan el Grupo de Montaña Llamaello, el Ayuntamiento de Villaviciosa y Rodiles Surf Llar, con la colaboración de las entidades que figuran en el cartel. El responsable del concurso y del tratamiento de los datos de los participantes es Manuel Ángel Toral Fernández (datos de contacto en el <a href="aviso-legal.html">aviso legal</a>).</p>
+<h2 id="2-participantes">2. Participantes</h2>
+<p>Puede participar cualquier persona aficionada o profesional de la fotografía, de España o de fuera, que sea mayor de 18 años. Las personas menores de edad pueden participar con la autorización de su padre, madre o tutor legal, que deberá enviarse a la organización antes de que finalice el plazo.</p>
+<p>Los miembros del jurado y sus familiares directos no pueden participar.</p>
+<h2 id="3-certamenes-y-categorias">3. Certámenes y categorías</h2>
+<p><strong>Certamen rexonal de semeyes etnográfiques d&#39;Asturies.</strong> Categoría única, más una categoría especial cada edición (en 2026, «El hórreo»). Se buscan las mejores fotografías que representen los usos y tradiciones de Asturias, y se valora tanto la calidad técnica como el valor documental.</p>
+<p><strong>Concurso de fotografía paisajística «Villaviciosa de Asturies».</strong> Categorías:</p>
+<ul>
+<li>Montaña, media montaña, bosques y ríos.</li>
+<li>Deportes en el mediu natural.</li>
+<li>Accésit Carreres por montaña en Asturies: deportistas corriendo por el monte, la costa o similares, en prueba deportiva o en sesión libre. No se admiten cross ni carreras en asfalto. Ámbito de Asturias y zonas limítrofes, como la vertiente sur de la Cordillera Cantábrica.</li>
+<li>La mar d&#39;Asturies y su franja costera.</li>
+<li>Accésit Villaviciosa: temática libre, siempre que la fotografía esté tomada dentro del concejo.</li>
+<li>Socios LlamaEllo: imágenes de cualquier actividad del socio, no solo con el club. Los socios deben indicarlo expresamente.</li>
+</ul>
+<p>En todas las categorías de paisaje el jurado valorará que el paisaje sea predominantemente natural. Se admite algún elemento humano por motivos compositivos, de escala o por su valor histórico o artístico. El jurado podrá cambiar una fotografía de categoría si con ello gana valor.</p>
+<h2 id="4-requisitos-de-las-fotografias">4. Requisitos de las fotografías</h2>
+<ul>
+<li>Formato JPG sin compresión adicional, de al menos 1920 píxeles en el lado mayor y un máximo de 20 MB por archivo.</li>
+<li>Sin marcos, bordes, firmas ni marcas de agua.</li>
+<li>Se admiten imágenes en blanco y negro o escala de grises.</li>
+<li>No se admiten imágenes creadas o modificadas sustancialmente con inteligencia artificial, ni montajes o ediciones que desvirtúen la fotografía original. La organización podrá pedir el archivo RAW o el original de cualquier fotografía.</li>
+<li>No hay límite de antigüedad, pero la fotografía debe ser obra del participante.</li>
+<li>Máximo de 3 fotografías al Certamen de semeyes etnográfiques y de 5 al Concurso de fotografía paisajística.</li>
+</ul>
+<h2 id="5-inscripcion">5. Inscripción</h2>
+<p>La participación se realiza mediante el <a href="participar.html">formulario de inscripción</a> de esta web, indicando para cada fotografía el título, una breve descripción y la categoría. Se recomienda contar en la descripción la técnica empleada y la historia de la imagen: ayuda al jurado a interpretarla.</p>
+<p>La participación es gratuita. El contacto con los participantes se hará por correo electrónico o por teléfono, incluido WhatsApp.</p>
+<h2 id="6-plazo">6. Plazo</h2>
+<p>El plazo de admisión termina el 1 de octubre de 2026 a las 23:59 (hora peninsular española).</p>
+<h2 id="7-jurado">7. Jurado</h2>
+<p>El jurado está formado por personas de reconocida experiencia en los temas a evaluar. Recibe las fotografías de forma anónima, identificadas solo con un código, para garantizar la imparcialidad. El fallo es inapelable. El jurado puede declarar desierto cualquier premio si considera que las obras no alcanzan el nivel suficiente.</p>
+<h2 id="8-premios">8. Premios</h2>
+<p>La entrega de premios será el sábado 17 de octubre de 2026 en el Teatro Riera de Villaviciosa.</p>
+<p><em>Certamen rexonal de semeyes etnográfiques d&#39;Asturies</em></p>
+<div class="table-scroll" tabindex="0">
+<table>
+<thead><tr><th>Premio</th><th class="alinear-derecha">Importe</th></tr></thead>
+<tbody>
+<tr><td>Ganador</td><td class="alinear-derecha">250 €</td></tr>
+<tr><td>Mención de honor</td><td class="alinear-derecha">150 €</td></tr>
+<tr><td>Finalista</td><td class="alinear-derecha">75 €</td></tr>
+<tr><td>Categoría especial 2026 «El hórreo»</td><td class="alinear-derecha">150 €</td></tr>
+</tbody>
+</table>
+</div>
+<p><em>Concurso de fotografía paisajística de Villaviciosa</em></p>
+<div class="table-scroll" tabindex="0">
+<table>
+<thead><tr><th>Categoría</th><th class="alinear-derecha">Ganador</th><th class="alinear-derecha">Finalista</th></tr></thead>
+<tbody>
+<tr><td>Montaña</td><td class="alinear-derecha">250 €</td><td class="alinear-derecha">100 €</td></tr>
+<tr><td>Mar</td><td class="alinear-derecha">250 €</td><td class="alinear-derecha">100 €</td></tr>
+<tr><td>Deportes</td><td class="alinear-derecha">250 €</td><td class="alinear-derecha">100 €</td></tr>
+<tr><td>Accésit Carreres por montaña</td><td class="alinear-derecha">100 €</td><td class="alinear-derecha">—</td></tr>
+<tr><td>Accésit Villaviciosa</td><td class="alinear-derecha">150 €</td><td class="alinear-derecha">—</td></tr>
+</tbody>
+</table>
+</div>
+<p>Los premios están sujetos a la normativa fiscal vigente.</p>
+<h2 id="9-ganadores-y-finalistas">9. Ganadores y finalistas</h2>
+<ul>
+<li>Tras el fallo, la organización contactará con los seleccionados para pedirles el archivo a máxima resolución, destinado a la impresión en gran formato y a la exposición en el casco antiguo de Villaviciosa. Esta petición es un aviso oficioso, no la comunicación oficial del resultado.</li>
+<li>Los seleccionados tienen un plazo de 2 días desde el fallo para enviar el archivo. Si no responden, y tras agotar las vías de contacto, se pasará al siguiente clasificado.</li>
+<li>Los premiados deben recoger el premio en el acto de entrega, en persona o mediante un representante.</li>
+<li>Durante el acto de entrega se tomarán fotografías que podrán publicarse en esta web y en las redes sociales del concurso. Quien no desee aparecer en ellas puede indicarlo a la organización antes o durante el acto.</li>
+</ul>
+<h2 id="10-autoria-derecho-a-la-propia-imagen-y-uso-de-las-obras">10. Autoría, derecho a la propia imagen y uso de las obras</h2>
+<ul>
+<li>Cada participante declara ser el único autor y titular de los derechos de las fotografías que presenta, y que no infringen derechos de terceros.</li>
+<li>Si en una fotografía aparecen personas reconocibles, el participante declara contar con su consentimiento para presentarla al concurso y para los usos descritos en estas bases. En el caso de menores, el consentimiento debe darlo su padre, madre o tutor. El participante asume la responsabilidad ante cualquier reclamación de terceros.</li>
+<li>El autor conserva en todo momento sus derechos de autor. Al participar, autoriza a la organización a mostrar las fotografías presentadas durante el desarrollo del concurso y a comunicar el resultado.</li>
+<li>Para las fotografías premiadas y finalistas, el autor concede a la organización una licencia no exclusiva, gratuita, sin límite de tiempo ni territorio, para reproducirlas y comunicarlas públicamente en exposiciones, proyecciones, esta web, redes sociales y material de difusión del propio concurso, citando siempre el nombre del autor. Esta licencia no permite vender las fotografías ni cederlas a terceros para fines comerciales.</li>
+</ul>
+<h2 id="11-proteccion-de-datos">11. Protección de datos</h2>
+<p>Los datos de los participantes se tratan según la <a href="privacidad.html">política de privacidad</a>. El nombre de los premiados y finalistas se publicará junto a sus obras en esta web, en redes sociales y en la exposición.</p>
+<h2 id="12-aceptacion-y-modificaciones">12. Aceptación y modificaciones</h2>
+<p>Participar supone aceptar estas bases. La organización puede descalificar las fotografías que no las cumplan. Si por causa de fuerza mayor o para mejorar las condiciones de los participantes (ampliación de plazos, mejora de premios) fuese necesario modificarlas, los cambios se publicarán en esta web y en las redes sociales del concurso.</p>
+<h2 id="recomendaciones">Recomendaciones</h2>
+<p>El concurso se inspira en la máxima «No se puede amar lo que no se conoce, ni defender lo que no se ama»: mostrar la belleza que nos rodea para despertar respeto y cariño por nuestro paisaje, nuestro paisanaje y su historia. Pedimos a los participantes que sigan el <a href="https://www.aefona.org/wp-content/uploads/2021/11/decalogo-etico-v2021-09.pdf" target="_blank" rel="noopener">decálogo ético de AEFONA</a> (Asociación Española de Fotógrafos de Naturaleza).</p>
+</article>
   </main>
 
   <footer>

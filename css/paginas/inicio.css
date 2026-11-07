@@ -11,25 +11,24 @@
 }
 
 .hero h1 {
-  margin-bottom: 1.6rem;
-  font-size: clamp(3.2rem, 2rem + 6vw, 6.4rem);
-  font-variant: normal;
-  line-height: 0.95;
-  letter-spacing: -0.01em;
+  margin-bottom: 1.4rem;
+  font-size: clamp(2rem, 1.4rem + 2.6vw, 3.2rem);
+  line-height: 1.05;
 }
 
-.hero h1 + p {
-  margin: -0.8rem 0 1.6rem;
-  font-size: 1.35rem;
-  font-style: italic;
-  color: var(--muted);
+.hero h1::after {
+  content: "";
+  display: block;
+  width: 4.5rem;
+  margin-top: 0.9rem;
+  border-top: 2px solid var(--red);
 }
 
 .hero ul {
   margin: 0 0 1.4rem;
   padding: 0;
   list-style: none;
-  font-size: 1.35rem;
+  font-size: 1.3rem;
   font-variant: small-caps;
   line-height: 1.35;
   letter-spacing: 0.03em;
@@ -58,6 +57,7 @@
 .hero figure img {
   width: 100%;
   border: 1px solid var(--copper-dim);
+  box-shadow: var(--shadow);
 }
 
 .hero figcaption {
@@ -85,6 +85,7 @@
 .edition h2 {
   margin-top: 0;
   font-size: clamp(1.8rem, 1.3rem + 2vw, 2.6rem);
+  font-variant: normal;
   color: var(--red);
 }
 

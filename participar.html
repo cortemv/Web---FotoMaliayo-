@@ -4,15 +4,15 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-  <title>Inscripción · FotoMaliayo</title>
+  <title>Participación · FotoMaliayo</title>
   <meta name="description"
     content="Formulario de inscripción de FotoMaliayo: envía tus fotografías al Certamen de semeyes etnográfiques y al Concurso de fotografía paisajística de Villaviciosa.">
   <link rel="canonical" href="https://fotomaliayo.es/participar.html">
-  <meta name="theme-color" content="#16100b">
+  <meta name="theme-color" content="#15100d">
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="FotoMaliayo">
   <meta property="og:locale" content="es_ES">
-  <meta property="og:title" content="Inscripción en FotoMaliayo">
+  <meta property="og:title" content="Participa en FotoMaliayo">
   <meta property="og:description"
     content="Formulario de inscripción de FotoMaliayo: envía tus fotografías al Certamen de semeyes etnográfiques y al Concurso de fotografía paisajística de Villaviciosa.">
   <meta property="og:url" content="https://fotomaliayo.es/participar.html">
@@ -24,7 +24,6 @@
   <link rel="stylesheet" href="css/global.css">
   <link rel="stylesheet" href="css/paginas/participar.css">
   <script src="js/datos/config.js" defer></script>
-  <script src="js/datos/entidades.js" defer></script>
   <script src="js/lib/utilidades.js" defer></script>
   <script src="js/componentes/sitio.js" defer></script>
   <script src="js/paginas/participar.js" defer></script>
@@ -34,22 +33,53 @@
   <a class="skip" href="#contenido">Saltar al contenido</a>
 
   <header>
-    <a href="./">FotoMaliayo</a>
+    <div class="banner">
+      <a class="marca" href="./">
+        <img src="img/logo-fotomaliayo.png" width="1298" height="849" alt="FotoMaliayo">
+      </a>
+      <p class="lema">
+        <span class="por-y-para">Por y Para</span>
+        <strong lang="ast">Asturies</strong>
+        <span class="filete"><img src="img/decoracion/trisquel.svg" width="40" height="40" alt=""></span>
+        <em>Paisaje y paisanaje</em>
+      </p>
+    </div>
     <nav aria-label="Principal">
-      <a href="ganadores.html">Ganadores</a>
-      <a href="bases.html">Bases</a>
-      <a href="participar.html" class="cta" aria-current="page">Participar</a>
+      <a href="./">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path class="relleno" d="M12 2.6 1.8 11.4a.6.6 0 0 0 .4 1.1H4.5V21a.8.8 0 0 0 .8.8h4.6v-6.3h4.2v6.3h4.6a.8.8 0 0 0 .8-.8v-8.5h2.3a.6.6 0 0 0 .4-1.1z"/></svg>
+        Inicio
+      </a>
+      <a href="historia.html">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M2.5 5.2c3.3-1.3 6.5-1.1 9.5 1 3-2.1 6.2-2.3 9.5-1v14c-3.3-1.3-6.5-1.1-9.5 1-3-2.1-6.2-2.3-9.5-1z"/><path d="M12 6.2v14"/></svg>
+        Historia
+      </a>
+      <a href="bases.html">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 2.5h8.5l4 4v15H6z"/><path d="M14.5 2.5v4h4"/><path d="M9 10.5h6.5M9 13.5h6.5M9 16.5h6.5"/></svg>
+        Bases
+      </a>
+      <a href="seleccionados.html">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 3h10v5.5a5 5 0 0 1-10 0z"/><path d="M7 5H3.8v1.4A3.6 3.6 0 0 0 7.4 10M17 5h3.2v1.4A3.6 3.6 0 0 1 16.6 10"/><path d="M12 13.5v3.6"/><path d="M8.3 21h7.4l-.9-3.9H9.2z"/></svg>
+        Seleccionados
+      </a>
+      <a href="galeria.html">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3.5" width="18" height="17" rx="1"/><circle cx="15.5" cy="8.5" r="1.6"/><path d="m5.5 18 4.6-6.2 3.4 4.2 2.2-2.6 3 4.6z"/></svg>
+        Galería
+      </a>
+      <a href="participar.html" aria-current="page">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><g class="relleno"><circle cx="12" cy="7" r="3.1"/><circle cx="5.2" cy="8.6" r="2.4"/><circle cx="18.8" cy="8.6" r="2.4"/><path d="M6.6 19.5v-2.6a5.4 5.4 0 0 1 10.8 0v2.6z"/><path d="M5.1 18.3H.9v-1.8a4.2 4.2 0 0 1 6-3.8 7 7 0 0 0-1.8 4.3zM18.9 18.3h4.2v-1.8a4.2 4.2 0 0 0-6-3.8 7 7 0 0 1 1.8 4.3z"/></g></svg>
+        Participación
+      </a>
     </nav>
   </header>
 
   <main id="contenido">
-    <h1>Inscripción</h1>
+    <h1>Participación</h1>
 
     <div id="cerrada" class="prose" hidden>
       <p>El plazo de inscripción de la edición <span data-config="edicion">2026</span> terminó el <span
           data-fecha-limite></span>.</p>
       <p>Las bases de la próxima edición se publicarán en esta web y en las redes sociales del concurso. Mientras tanto,
-        puedes ver los <a href="ganadores.html">ganadores de ediciones anteriores</a>.</p>
+        puedes ver los <a href="seleccionados.html">fotografías seleccionadas de ediciones anteriores</a>.</p>
     </div>
 
     <noscript>
